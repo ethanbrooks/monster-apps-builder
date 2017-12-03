@@ -1,0 +1,31 @@
+{
+	"name": "service-planner",
+	"i18n": {
+		"en-US": {
+			"label": "Service Plan Editor",
+			"description": "The Service Plan Editor lets you manage your service plans",
+			"extended_description": "",
+			"features": [
+				"Service Plan Management"
+			]
+		}
+	},
+	"tags": [
+		"developer"
+	],
+	"icon": "",
+	"api_url": "http://10.26.0.41:8000/v2",
+	"author": "2600Hz",
+	"version": "1.0",
+	"license": "-", 
+	"price": 0,
+	"screenshots": [
+		"logs.png",
+		"settings.png"
+	],
+	"urls": {
+		"documentation": "{documentation_url}",
+		"howto": "{howto_video_url}"
+	},
+	"pvt_type": "app"
+}

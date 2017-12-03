@@ -1,0 +1,8 @@
+Release Summary for 4.2.0
+  Difference between master and 4.1
+  * Summary
+      - As a FEE, I want to use lodash instead of underscorejs so that I have access to more utilities
+  * Commits
+      - [UI-2866: Reference lodash intead of underscore following migration (#13)](https://github.com/2600hz/monster-ui-port/commit/dfdeed703114cfdb77d71c09f89b27bc3e5e950f) by Joris Tirado
+  * [OOB: Updating metadata for port](https://github.com/2600hz/monster-ui-port/commit/b8b10dab7d5c9beab2d6288784b7f17ddc57b2f1) by JR Maitre
+ -- 2600Hz Offical <packages@2600hz.com>  Wed, 27 Sep 2017 22:43:25 +0000

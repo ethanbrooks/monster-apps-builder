@@ -1,0 +1,14 @@
+version: '2.3'
+services:
+  monster-apps-builder:
+    container_name: monster-apps-builder
+    build:
+      context: images/monster-apps-builder
+      args:
+        NODE_VERSION: "6"
+    image: telephoneorg/monster-apps-builder:${DOCKER_TAG:-latest}
+    environment:
+      MONSTER_APPS_VERSION: 4.2-0
+      MONSTER_APPS: auth-security,blacklists,branding,call-recording,callqueues,callqueues-reporting,carriers,cdrs,cluster,conferences,debug,dialplans,duo,integration-aws,integration-google-drive,migration,mobile,operator,operator-pro,pivot,port,provisioner,reporting,service-planner,tasks,userportal,websockets
+    volumes:
+    - $PWD/dist:/dist

@@ -1,0 +1,36 @@
+{
+	"name": "debug",
+	"i18n": {
+		"en-US": {
+			"label": "Debug Tool",
+			"description": "The Debugging App gives you access to different tools to help you debug the things happening on your platform.",
+			"extended_description": "Easily debug common voice, SMTP and IP phone issues with an accumulated toolkit that gives administrators visibility into system performance, thus aiding in solving customer issues. This tool gives real time insight on what is going on in the system as well as insight into a client’s network. System administrators can collect the data and provide potential quick fixes for issues before contacting support for additional help.",
+			"features": [
+				"Real time insight on active calls",
+				"Debug Tools SIP Registrations",
+				"SMTP/Fax Logs",
+				"Presence/BLF Troubleshooter",
+				"Call Inspector with SIP Ladder Diagram",
+				"View Active Channels"
+			]
+		}
+	},
+	"tags": [
+		"developer"
+	],
+	"icon": "Debug_app.png",
+	"api_url": "http://10.26.0.41:8000/v2",
+	"author": "2600Hz",
+	"version": "1.0",
+	"license": "-", 
+	"price": 0,
+	"screenshots": [
+		"debug_1.png",
+		"debug_2.png"
+	],
+	"urls": {
+		"documentation": "{documentation_url}",
+		"howto": "{howto_video_url}"
+	},
+	"pvt_type": "app"
+}

@@ -1,0 +1,36 @@
+{
+	"name": "conferences",
+	"i18n": {
+		"en-US": {
+			"label": "Conference Manager",
+			"description": "Manage your Conferences in this App.",
+			"extended_description": "Conference manager provides an intuitive experience for conferencing activities. This is perfect for users managing one or multiple conferences in unison. Account set up is as easy as assigning a conference bridge, phone number and pin. Once these items are confirmed, the user can schedule immediately. As a moderator, the user can initiate and end conferences on demand, see all activity for live participants and manage microphones, all in real-time.",
+			"features": [
+				"View real-time activity of participants and moderators",
+				"Lock, mute and end live conferences",
+				"Globally optimized network",
+				"Select from a multitude of dial ins, using various country codes, while only accumulating local call charges",
+				"Customize controls to enhance conference experience",
+				"On demand conference access"
+			]
+		}
+	},
+	"tags": [
+		"reseller"
+	],
+	"icon": "Conferencing_app.png",
+	"api_url": "http://10.26.0.41:8000/v2",
+	"author": "2600Hz",
+	"version": "1.0",
+	"license": "-",
+	"price": 0,
+	"screenshots": [
+		"ConferencesLists.png",
+		"In-conference.png"
+	],
+	"urls": {
+		"documentation": "{documentation_url}",
+		"howto": "{howto_video_url}"
+	},
+	"pvt_type": "app"
+}

@@ -1,0 +1,30 @@
+{
+	"name": "port",
+	"i18n": {
+		"en-US": {
+			"label": "Port Manager",
+			"description": "Manage your ports",
+			"extended_description": "Leaving your numbers behind can be a huge headache, so Port Manager is a simple solution to make porting numbers easy. We offer the ease of uploading all your documentation to your Port Order, give you the option to e-sign, and even bulk port order without the need to contact a support line.",
+			"features": [
+				"Upload all documents to one source",
+				"Port orders for bulk numbers"
+			]
+		}
+	},
+	"tags": [
+	],
+	"icon": "Porting_app.png",
+	"api_url": "http://10.26.0.41:8000/v2",
+	"author": "2600Hz",
+	"version": "1.0",
+	"license": "-",
+	"price": 0,
+	"screenshots": [
+		"port_1.png"
+	],
+	"urls": {
+		"documentation": "{documentation_url}",
+		"howto": "{howto_video_url}"
+	},
+	"pvt_type": "app"
+}

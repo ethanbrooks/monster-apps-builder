@@ -1,0 +1,37 @@
+Release Summary for 4.2.0
+  Difference between master and 4.1
+  * Summary
+      - As an account admin, I would like to logout agents from Call Center
+  * Commits
+      - [UI-2850: Check privileges directly in template (#5)](https://github.com/2600hz/monster-ui-carriers/commit/76946a7a85b43f071cc660a3730a99332cb7c32d) by Joris Tirado
+  * Summary
+      - As a FEE, I want to use lodash instead of underscorejs so that I have access to more utilities
+  * Commits
+      - [UI-2866: Reference lodash intead of underscore following migration (#4)](https://github.com/2600hz/monster-ui-carriers/commit/01624a4bfd0f652eabc40c983b8da2a961610719) by Joris Tirado
+  * Summary
+      - As a FEE, I want ESLint errors/warnings to be fixed for the Migration app so that the codebase is consistent
+  * Commits
+      - [UI-2834: Fix switch statement keyword spacing (#3)](https://github.com/2600hz/monster-ui-carriers/commit/093d8165fed4707f43ebf5e06ad32f763a29653e) by Joris Tirado
+  * Summary
+      - As a FEE, I want ESLint errors/warnings to be fixed for the Carriers app so that the codebase is consistent
+  * Commits
+      - [UI-2828: Fix ESLint erros/warnings (#2)](https://github.com/2600hz/monster-ui-carriers/commit/f9d61160980f5f186519befe66f1d8e5534c1d14) by Joris Tirado
+  * Summary
+      - As a FEE, I want the core-content id to use snake case so that all ids are in the format
+  * Commits
+      - [UI-2694: Normalize core content id name to snake case (#1)](https://github.com/2600hz/monster-ui-carriers/commit/1026b375082c54cbcfe2e9c453547797a502ebd1) by Joris Tirado
+  * Summary
+      - As an admin I want to be able configure caller id privacy for each resource so that I can set caller if to hide or not based on carrier support
+  * Commits
+      - [UI-2610: add privacy mode to carrier app, allowing users to anonymize CID
+  As a recent addition to kazoo, it&#039;s now possible to control if caller id
+  should be anonymized or not for outbound call if call has privacy flags
+  set on.
+  Possible values are:
+  &quot;kazoo&quot;: hides both caller id name and number
+  &quot;sip&quot;: does not hide cid
+  &quot;hide_name&quot;: only hide caller id name
+  &quot;hide_number&quot;: only hide caller id number](https://github.com/2600hz/monster-ui-carriers/commit/fbe96e0b5dd8503f1ccccd0bb56d712f06a7f52f) by Jean-Roch Maitre
+  * [OOB: Updated metadata](https://github.com/2600hz/monster-ui-carriers/commit/d47880c89a8555b9c7e8367cfc525647e1f340a7) by JR Maitre
+  * [OOB: fixing name of function to not conflict with new handlebar get template function](https://github.com/2600hz/monster-ui-carriers/commit/749adae01962e5ec274eb07b8a0e4755f1b80fb5) by Jean-Roch Maitre
+ -- 2600Hz Offical <packages@2600hz.com>  Wed, 27 Sep 2017 22:18:06 +0000

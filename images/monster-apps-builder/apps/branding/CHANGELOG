@@ -1,0 +1,38 @@
+Release Summary for 4.2.0
+  Difference between master and 4.1
+  * Summary
+      - As a FEE, I want to use lodash instead of underscorejs so that I have access to more utilities
+  * Commits
+      - [UI-2866: Reference lodash intead of underscore following migration (#5)](https://github.com/2600hz/monster-ui-branding/commit/6304aee55a4439a7fcc9ab2b69be076da75e42b3) by Joris Tirado
+  * Summary
+      - As an Admin, I would like to &quot;Pretty print&quot; Email names in templates
+  * Commits
+      - [UI-2867: remove validation for email addresses in form field since we want to allow users to have emails like Friendly Name &lt;friendly@name.com&gt;](https://github.com/2600hz/monster-ui-branding/commit/6094780389ee51f6f8142a7daad0c5502bb8f97c) by Jean-Roch Maitre
+  * Summary
+      - As a FEE, I want ESLint errors/warnings to be fixed for the Branding app so that the codebase is consistent
+  * Commits
+      - [UI-2822: Fix ESLint erros/warnings (#4)](https://github.com/2600hz/monster-ui-branding/commit/50737fab565ef00daf5083cec655f17f0c4ce61a) by Joris Tirado
+  * Summary
+      - As a developer I want to be able to delete my customize templates or see and reset to system_config
+  * Commits
+      - [UI-2677: add a way to force system settings on templates](https://github.com/2600hz/monster-ui-branding/commit/eb446728c287779e40a1294f62406fce35bb220f) by Jean-Roch Maitre
+  * Summary
+      - As a FEE, I want the core-content id to use snake case so that all ids are in the format
+  * Commits
+      - [UI-2694: Normalize core content id name to snake case (#3)](https://github.com/2600hz/monster-ui-branding/commit/df553253adb503a3f510a4ee756b7c457d82f044) by Joris Tirado
+  * Summary
+      - Branding Template Error responses
+  * Commits
+      - [UI-2644: fix wrong selector to trigger validation](https://github.com/2600hz/monster-ui-branding/commit/96db90b58e33b5b956b24c9ceffa11b473f90fe1) by Jean-Roch Maitre
+      - [UI-2644: validate email when using templates](https://github.com/2600hz/monster-ui-branding/commit/f24be612d05226b2f22c7ca1f8b2f7b3bb69c9f0) by Jean-Roch Maitre
+  * Summary
+      - As a FEE, I want `sortBy` to replace our util function so that I use native functions from underscore
+  * Commits
+      - [UI-2649: Use sortBy instead of monster.util.sort (#2)](https://github.com/2600hz/monster-ui-branding/commit/484f6c24b33065878e4935097a1dec8c6f229324) by Joris Tirado
+  * [UI-2803: added a field to set provisioner URL field](https://github.com/2600hz/monster-ui-branding/commit/d99e92bf07c704a6b0fe22b16b5fb63ad750cd12) by Jean-Roch Maitre
+  * [OOB: Fix Powered by 2600Hz](https://github.com/2600hz/monster-ui-branding/commit/9b98125786728f006d353e9ca4b9cc11975fbf0b) by Jean-Roch Maitre
+  * [OOB: remove useless console.log](https://github.com/2600hz/monster-ui-branding/commit/73e1660c23fc1c84a67dfde797b4964ca201a29b) by Jean-Roch Maitre
+  * [OOB: add svg as a valid type in branding app](https://github.com/2600hz/monster-ui-branding/commit/3a474579dd4386db78ae1c5165fb59476b7b09df) by Jean-Roch Maitre
+  * [OOB: Adding tooltip to show actual/expected values when mismatch](https://github.com/2600hz/monster-ui-branding/commit/c210b55d3b5eb1e0bb6de587f2a113ea0688e316) by Jean-Roch Maitre
+  * [UI-2739: Fixed matching of TXT records in DNS helper of branding app](https://github.com/2600hz/monster-ui-branding/commit/18d623a2889b74968e80e7c50dd0471303bdff4d) by Jean-Roch Maitre
+ -- 2600Hz Offical <packages@2600hz.com>  Wed, 27 Sep 2017 22:11:56 +0000

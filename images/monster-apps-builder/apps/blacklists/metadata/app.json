@@ -1,0 +1,30 @@
+{
+	"name": "blacklists",
+	"i18n": {
+		"en-US": {
+			"label": "Blacklists",
+			"description": "The Blacklist app lets you manage lists of numbers to block in the system.",
+			"extended_description": "",
+			"features": [
+			]
+		}
+	},
+	"tags": [],
+	"icon": "Blacklists_app.png",
+	"api_url": "http://10.26.0.41:8000/v2",
+	"author": "2600Hz",
+	"version": "1.0",
+	"license": "-",
+	"masqueradable": true,
+	"price": 0,
+	"screenshots": [
+		"creation.png",
+		"creation_2.png",
+		"list.png"
+	],
+	"urls": {
+		"documentation": "{documentation_url}",
+		"howto": "{howto_video_url}"
+	},
+	"pvt_type": "app"
+}

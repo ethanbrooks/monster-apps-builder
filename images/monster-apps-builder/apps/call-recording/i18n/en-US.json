@@ -1,0 +1,183 @@
+{
+	"callRecording": {
+		"menuTitles": {
+			"storageSettings": "Storage Settings",
+			"configuration": {
+				"main": "Configuration",
+				"account": "Account",
+				"devices": "Devices",
+				"users": "Users"
+			},
+			"recordings": "Stored Recordings"
+		},
+
+		"storageSettings": {
+			"emptyState": {
+				"mainTitleWithPlans": "It looks like this account doesn't have any storage configured for call recording yet.",
+				"mainTitleNoPlans": "You don't have any connector configured on your account.",
+				"subTitleWithPlans": "There are {{variable}} storage options detected on your account, please select one to store recordings.",
+				"subTitleNoPlans": "You need to enable Integrations app (like AWS Connector or Google Drive Connector) in order to use the Call-Recording app.",
+				"chooseButton": "Choose Storage Option"
+			},
+			"changeButton": "Change Storage Option",
+			"deleteButton": "Remove Settings",
+			"confirmChange": "Changing storage options will reset all your current fodler configurations for storing saved call recordings. If you choose to continue, you will have to reconfigure all the storage folders for call recording on this account.",
+			"confirmYes": "Yes, Change Storage Options",
+			"confirmTitle": "Warning! Are you sure?",
+			"confirmDelete": "Yes, Remove Setting",
+			"confirmDeleteText": "This will remove the Call-Recording settings from this account.",
+			"confirmDeleteTitle": "Warning! Are you sure?",
+			"successUpdate": "Your Call-Recording Storage Settings were successfully updated!",
+			"successPathUpdate": "You successfully updated the path where call-recordings will be stored."
+		},
+
+		"configuration": {
+			"enabled": "Enabled",
+			"disabled": "Disabled",
+			"inherit": "Inherit",
+			"account": {
+				"endpoint": {
+					"title": "Force Record all Users on Account",
+					"subTitle": "Settings Forced Recording for users at the account level will cascade down to devices that are set to inherit any user's configuration that the device is attached to.",
+					"inbound": {
+						"onnet": {
+							"title": "Force Record Internal Inbound",
+							"tooltip": "Force Record Internal Inbound"
+						},
+						"offnet": {
+							"title": "Force Record External Inbound",
+							"tooltip": "Force Record External Inbound"
+						}
+					},
+					"outbound": {
+						"onnet": {
+							"title": "Force Record Internal Outbound",
+							"tooltip": "Force Record Internal Outbound"
+						},
+						"offnet": {
+							"title": "Force Record External Outbound",
+							"tooltip": "Force Record External Outbound"
+						}
+					}
+				},
+				"account": {
+					"title": "Force Record Entire Account",
+					"subTitle": "Settings Forced Call-Recording for an entire account will record every call on the account, including callflows, ring groups, conferences, etc...",
+					"inbound": {
+						"onnet": {
+							"title": "Force Record Internal Inbound",
+							"tooltip": "Force Record Internal Inbound"
+						},
+						"offnet": {
+							"title": "Force Record External Inbound",
+							"tooltip": "Force Record External Inbound"
+						}
+					},
+					"outbound": {
+						"onnet": {
+							"title": "Force Record Internal Outbound",
+							"tooltip": "Force Record Internal Outbound"
+						},
+						"offnet": {
+							"title": "Force Record External Outbound",
+							"tooltip": "Force Record External Outbound"
+						}
+					}
+				},
+				"metaflow": {
+					"title": "On-demand (In-Call) Recording",
+					"subTitle": "This enables On-Demand (In-Call) Call Recording for all objects under this account",
+					"code": {
+						"title": "Feature Code",
+						"tooltip": "This parameter lets you configure which sequence to input to enable Call-Recording while you're on a call."
+					},
+					"codeAlreadyExist": "This number is not available as it's already used by another system feature."
+				}
+			},
+			"entity": {
+				"table": {
+					"columns": {
+						"name": "Name",
+						"inboundOnnet": "Inbound Internal",
+						"inboundOffnet": "Inbound External",
+						"outboundOnnet": "Outbound Internal",
+						"outboundOffnet": "Outbound External"
+					}
+				},
+				"editDialog": {
+					"toggleValues": {
+						"inboundOnnet": {
+							"title": "Inbound Internal:",
+							"help": ""
+						},
+						"inboundOffnet": {
+							"title": "Inbound External:",
+							"help": ""
+						},
+						"outboundOnnet": {
+							"title": "Outbound Internal:",
+							"help": ""
+						},
+						"outboundOffnet": {
+							"title": "Outbound External:",
+							"help": ""
+						},
+						"on": "On",
+						"accountDefault": "Account Default",
+						"off": "Off"
+					}
+				}
+			},
+			"users": {
+				"table": {
+					"columns": {
+						"name": "User Name"
+					}
+				},
+				"editDialog": {
+					"title": "Edit User's Call-Recording Settings"
+				}
+			},
+			"devices": {
+				"table": {
+					"columns": {
+						"name": "Device Name"
+					}
+				},
+				"editDialog": {
+					"title": "Edit Device's Call-Recording Settings"
+				}
+			}
+		},
+
+		"recordings": {
+			"table": {
+				"columns": {
+					"direction": "Direction",
+					"from": "From",
+					"to": "Target Number",
+					"startTime": "Start Time",
+					"duration": "Duration"
+				},
+				"directions": {
+					"inbound": "Inbound",
+					"outbound": "Outbound"
+				},
+				"filterDirection": {
+					"all": "All Recordings",
+					"inbound": "Inbound Recordings",
+					"outbound": "Outbound Recordings"
+				},
+				"detailsDialog": {
+					"title": "Recording Details"
+				},
+				"directionFilter": {
+					"tooltip": "Filter By Direction",
+					"all": "All Recordings",
+					"inbound": "Inbound Recordings",
+					"outbound": "Outbound Recordings"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,80 @@
+{
+	"global": "Défaut",
+	"reseller": "Fournisseur",
+	"account": "Compte",
+	"devices": "Téléphones",
+	"accounts": "Comptes",
+	"delete": "Supprimer",
+	"configure": "Configurer",
+	"addDevice": "Ajouter un téléphone",
+	"noDevices": "Il n'y a aucun téléphones sur ce compte.",
+	"deviceSettings": "Parmètres du téléphone",
+	"accountSettings": "Paramètres du compte",
+	"providerSettings": "Paramètres du fournisseur",
+	"brand": "Marque",
+	"model": "Modèle",
+	"deviceName": "Nom du téléphone",
+	"macAddress": "Adresse MAC",
+	"cancel": "Annuler",
+	"save": "Sauvegarder",
+	"reset": "Réinitialiser",
+	"selectBrand": "Sélectionner une marque",
+	"selectModel": "Sélectionner un modèle",
+	"providerSettings": "Paramètres du fournisseur",
+	"accountSettings": "Paramètres du compte",
+	"provisionerUrl": "Le Provisioner est configuré avec l'URL suivante:",
+	"inherit": "Hérite",
+	"inherits": {
+		"partOne": "Hérite de ",
+		"partTwo": " au niveau du "
+	},
+	"viewType": {
+		"device": "Paramètres de téléphone",
+		"account": "Paramètres du compte",
+		"reseller": "Paramètres du fournisseur"
+	},
+	"loadingMessage": {
+		"get": {
+			"reseller": "Chargement des paramètres du fournisseur",
+			"account": "Chargement des paramètres du compte",
+			"device": "Chargement des paramètres du téléphone"
+		},
+		"create": {
+			"device": "Sauvegarde du nouveau téléphone"
+		},
+		"update": {
+			"reseller": "Mise à jour des paramètres du fournisseur",
+			"account": "Mise à jour des paramètres du compte",
+			"device": "Mise à jour des paramètres du téléphone"
+		},
+		"list": {
+			"accounts": "Chargement de la liste des comptes"
+		}
+	},
+	"toastr": {
+		"info": {
+			"unknownMacAddress": "{{macAddress}} ne correspond à aucun téléphones dans les comptes listés !"
+		},
+		"success": {
+			"unlock": "Votre téléphone a été déverrouillé avec succès"
+		}
+	},
+	"alert": {
+		"confirm": {
+			"generateFiles": "Your settings are about to be updated. Do you want to generate the corresponding files?"
+		}
+	},
+	"yes": "Oui",
+	"no": "Non",
+	"__comment": "UI-377: Adding restart feature to provisioner",
+	"__version": "3.21",
+	"restart": {
+		"label": "Redémarrer",
+		"success": "Vous avez envoyé une requête de redémarrage avec succès!",
+		"disabled": "Cet appareil n'existe pas ou n'est pas connecté à la plateforme. Nous ne pouvons donc pas envoyer de requête de redémarrage vers cet appareil."
+	},
+	"searchDevicePlaceholder": "Chercher une MAC Adresse",
+
+	"unlock": "Déverrouiller",
+	"settingsNotSupported": "Paramètres non supportés pour ce téléphone"
+}

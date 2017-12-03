@@ -1,0 +1,7 @@
+Release Summary for 4.2.1
+  Changes to 4.2 after version 4.2.0
+  * Summary
+      - Call Recording Direction is Incorrect
+  * Commits
+      - [UI-2930: fix direction on call recordings to use origin field](https://github.com/2600hz/monster-ui-call-recording/commit/979fade4d0912d30ab0d9041e2cf516052d44a09) by Jean-Roch Maitre
+ -- 2600Hz Offical <packages@2600hz.com>  Tue, 17 Oct 2017 23:27:04 +0000

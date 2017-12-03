@@ -1,0 +1,79 @@
+{
+	"cdrs": {
+		"tabTitles": {
+			"overall": "Overall",
+			"user": "User",
+			"number": "Number",
+			"dashboard": "Dashboard",
+			"logs": "Logs"
+		},
+		"cdrsList": {
+			"timezoneChoice": "Timezone: ",
+			"table": {
+				"date": "Date",
+				"direction": "Direction",
+				"from": "From",
+				"to": "To",
+				"hangupCause": "Hangup Cause",
+				"duration": "Duration",
+				"inbound": "Inbound",
+				"outbound": "Outbound",
+				"actions": "Actions",
+				"report": "Report",
+				"interactions": "View Interactions",
+				"details": "Technical Details",
+				"showInternal": "Show Internal Calls"
+			},
+			"dateFilters": {
+				"thisMonth": "This Month",
+				"thisWeek": "This Week",
+				"thisDay": "Today",
+				"custom": "Custom"
+			},
+			"deviceTypes": {
+				"cellphone": "Cell Phone",
+				"sip_device": "SIP Phone",
+				"smartphone": "Smartphone",
+				"mobile": "Business Mobile",
+				"softphone": "Soft Phone",
+				"landline": "Landline",
+				"fax": "Fax",
+				"ata": "ATA",
+				"sip_uri": "SIP URI",
+				"unknown": "Unknown"
+			}
+		},
+		"cdrsDetailDialog": {
+			"title": "CDR Technical Details"
+		},
+		"cdrsInteractionsDialog": {
+			"title": "Interactions"
+		},
+		"user": {
+			"selectOne": "In order to view a User's CDRs, search his name in the table below and click on the row to select him!",
+			"name": "User Name"
+		},
+		"dashboard": {
+			"empty": "There's no data for the range you selected.",
+			"titles": {
+				"inboundVsOutbound": "Inbound vs Outbound",
+				"hangupCauses": "Hangup Causes",
+				"callStatistics": "Call Statistics",
+				"totalCostPerRate": "Total Cost Per Rate"
+			},
+			"axes": {
+				"occurrences": "Occurrences",
+				"periodOfDay": "Period Of Day"
+			},
+			"rows": {
+				"avgDuration": "Avg. Duration",
+				"maxDuration": "Longest",
+				"avgCost": "Avg. Cost",
+				"maxCost": "Max Cost",
+				"totalDuration": "Total Duration",
+				"totalCost": "Total Cost",
+				"totalCalls": "Number of Calls"
+			}
+		}
+	}
+}

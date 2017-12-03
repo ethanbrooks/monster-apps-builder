@@ -1,0 +1,7 @@
+Release Summary for 4.2.3
+  Changes to 4.2 after version 4.2.2
+  * Summary
+      - When using the replace device feature, both esn and sim are currently required, which they should not
+  * Commits
+      - [UI-2931: Disable validation and show request error message (#26)](https://github.com/2600hz/monster-ui-mobile/commit/9415da26819bf7a9b023df8d235b4807063a4216) by Joris Tirado
+ -- 2600Hz Offical <packages@2600hz.com>  Wed, 11 Oct 2017 23:48:48 +0000

@@ -1,0 +1,169 @@
+{
+	"callQueuesApp": {
+		"appName": "Call Center",
+		"wizard": {
+			"buttons": {
+				"back": "Back",
+				"cancel": "Cancel Queue Creation"
+			},
+			"info": {
+				"title": "Let's create a new queue.",
+				"text": "First, you'll need to name the queue and assign a number or extension.",
+				"labels": {
+					"queueName": "Queue Name",
+					"callerId": "Call-in Number Or Ext."
+				},
+				"next": "Next - Queue Configuration"
+			},
+			"configuration": {
+				"title": "Next, please set queue configuration for: {{variable}}.",
+				"text": "If you are happy with the default configurations, continue on to Agent Settings.",
+				"labels": {
+					"afterTimeout": "Escalation Callflow After Timeout",
+					"queueRouter": "Queue Routing Strategy",
+					"holdTreatment": "Hold Treatment",
+					"queueTimeout": "Queue Timeout (sec)",
+					"timeoutSize": "Timeout If Size Exceeds",
+					"escalationQueue": "Escalation Queue",
+					"timeoutEmpty": "Timeout Immediately If Empty"
+				},
+				"routingOptions": {
+					"roundRobin": "Round Robin",
+					"leastCalls": "Least Calls",
+					"leastOffers": "Least Offers",
+					"mostIdle": "Most Idle"
+				},
+				"next": "Next - Agent Settings"
+			},
+			"agents": {
+				"title": "The last step is to establish agent behavior in: {{variable}}.",
+				"text": "If you are satisfied with the agent settings , you can now finish creating your queue.",
+				"labels": {
+					"agentRecovery": "Agent Recovery Time (sec)",
+					"forceAway": "Force Away on Rejected/Missed",
+					"agentConnect": "Agent Connect Timeout (sec)"
+				},
+				"next": "Create Queue"
+			},
+			"success": {
+				"title": "The queue {{variable}} was successfully created!",
+				"text": "You can view your new queue in the Call Center Dashboard, where you can add agents to the queues as well as edit the queue's configuration",
+				"next": "Go To Dashboard"
+			}
+		},
+		"queueEdit": {
+			"titles": {
+				"details": "Details",
+				"configuration": "Configuration",
+				"agentBehavior": "Agent Behavior"
+			}
+		},
+		"agentsList": {
+			"title": "There are currently no agents logged in to this queue.",
+			"text": "To add an agent to this queue, click below.",
+			"action": "Manage Agents"
+		},
+		"agentsManage": {
+			"title": "Manage Agents",
+			"text": "To add agents to this queue, drag them from the 'Available' column to the 'Assigned' column. Reverse the action to remove agents from this queue.",
+			"columns": {
+				"available": "Available Users In The System ({{variable}})",
+				"assigned": "Agents Assigned To This Queue"
+			}
+		},
+		"userInfo": {
+			"actions": {
+				"ready": "Mark as Ready",
+				"away": "Mark as Away",
+				"extendRecoveryTime": "Extend Recovery Time",
+				"login": "Login",
+				"logout": "Logout"
+			}
+		},
+		"userStats": {
+			"totalCalls": "Total Calls",
+			"missedCalls": "Missed Calls",
+			"callsHandled": "Calls Handled",
+			"averageHandleTime": "Avg. Handle Time",
+			"sessionDuration": "Session Duration"
+		},
+		"callInfo": {
+			"subtitle": "Your Call Duration",
+			"labels": {
+				"callerId": "Caller ID:",
+				"callerName": "Caller Name:",
+				"queue": "Queue:"
+			}
+		},
+		"queuesList": {
+			"allQueues": "all queues",
+			"action": "Add New Queue",
+			"title": "There are currently no available queues.",
+			"text": "Create a queue to get started."
+		},
+		"queueElementStats": {
+			"notRunning": "This queue is in the process of being started, this may take a few moments",
+			"call": "Call",
+			"calls": "Calls",
+			"cells": {
+				"agents": "Agents (Active / Total)",
+				"averageWait": "Average Wait",
+				"activeSessionCount": "Calls In Queue",
+				"missedCalls": "Missed Calls",
+				"abandonedCalls": "Abandoned Calls"
+			}
+		},
+		"states": {
+			"callConnecting": "Call Connecting...",
+			"connecting": "Connecting...",
+			"noCurrentCall": "No Current Call",
+			"notLoggedIn": "Not Logged In",
+			"onCall": "On Call",
+			"ready": "Ready",
+			"away": "Away",
+			"recovery": "Recovery Time",
+			"loggedIn": "Logged in",
+			"waitingForCall": "Waiting for call...",
+			"awayDuration": "Away Duration",
+			"recoveryTime": "Recovery Time",
+			"recoveryTimeRemaining": "Recovery Time Remaining"
+		},
+		"misc": {
+			"callEntities": {
+				"voicemail": "Voicemail Boxes"
+			},
+			"me": " (Me)",
+			"defaultMusic": "Default Music",
+			"none": "None",
+			"callflowName": "Qubicle Callflow ",
+			"back": "Back",
+			"uploadButton": "Upload a file",
+			"saveChanges": "Save Changes",
+			"cancelQueue": "Cancel Queue Creation"
+		},
+		"toastr": {
+			"warning": {
+				"missingCallflow": "It looks like this queue was created outside of the UI (missing callflow) and therefore it is not possible to edit it at this time."
+			}
+		},
+		"tooltips": {
+			"queue": {
+				"settings": {
+					"queueRouter": "How calls will be distributed from this queue to recipients",
+					"holdTreatment": "The media that will play while callers wait in this queue",
+					"timeout": "How long a call will wait in this queue",
+					"timeoutIfSizeExceeds": "If this size is exceeded, calls will leave the queue immediately",
+					"timeoutImmediatelyIfEmpty": "If enabled and no recipients are logged in, calls will leave the queue immediately",
+					"timeoutRedirect": "If a call leaves the queue, it will be sent to this queue",
+					"agentWrapupTime": "How long a recipient has after handling a call before they can handle another",
+					"forceAwayOnReject": "If enabled and a recipient rejects a call, force them to the away state",
+					"ringTimeout": "How long the recipients device will be rung when delivering a call"
+				}
+			},
+			"eavesdrop": "Eavesdrop",
+			"whisper": "Whisper",
+			"barge": "Barge",
+			"logoutAgent": "Logout this agent"
+		}
+	}
+}

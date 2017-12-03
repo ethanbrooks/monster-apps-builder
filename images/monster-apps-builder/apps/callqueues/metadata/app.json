@@ -1,0 +1,36 @@
+{
+	"name": "callqueues",
+	"i18n": {
+		"en-US": {
+			"label": "Call Center Basic",
+			"description": "The Call Center app allows you to manage call queues",
+			"extended_description": "Call Center exposes agent, manager and administrator settings so that you can enable end users to use call queues as efficiently as possible. Developers/admins can use the queues in callflows (visual or via API) with all other elements in the system. When creating a call queue, administrators have the ability to choose the most effective call routing strategy for their needs, along with personalized hold music and a separate escalation queue if desired.",
+			"features": [
+				"Call queues",
+				"Detailed view for agents to: Log in and start taking calls, See who else is in their queue and what is occurring, Log out or mark themselves as away, See real-time statistics on their daily performance.",
+				"Queue metrics",
+				"BLF indications of current agent state",
+				"Estimated and actual wait time tracking"
+			]
+		}
+	},
+	"tags": [
+		"reseller",
+		"carrier"
+	],
+	"icon": "Callqueues_app.png",
+	"api_url": "//10.26.0.21:8000/v2",
+	"author": "2600Hz",
+	"version": "1.0",
+	"license": "-",
+	"price": 0,
+	"screenshots": [
+		"AddNewQueue--3.png",
+		"Dashboard.png",
+		"NewQueue--ManageAgents.png"
+	],
+	"urls": {
+		"documentation": "{documentation_url}",
+		"howto": "{howto_video_url}"
+	}
+}

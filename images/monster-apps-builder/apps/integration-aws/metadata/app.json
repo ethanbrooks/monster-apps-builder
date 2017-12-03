@@ -1,0 +1,31 @@
+{
+	"name": "integration-aws",
+	"i18n": {
+		"en-US": {
+			"label": "AWS Connector",
+			"features": [],
+			"extended_description": "",
+			"description": "Set up and manage your AWS accounts as a storage platform for media."
+		}
+	},
+	"tags": [
+		"developer"
+	],
+	"icon": "Integration_AWS_app.png",
+	"api_url": "http://10.26.0.41:8000/v2",
+	"author": "2600Hz",
+	"version": "1.0",
+	"license": "-", 
+	"price": 0,
+	"screenshots": [
+		"creation.png",
+		"list.png"
+	],
+	"urls": {
+		"documentation": "{documentation_url}",
+		"howto": "{howto_video_url}"
+	},
+	"masqueradable": true,
+	"phase": "alpha",
+	"pvt_type": "app"
+}

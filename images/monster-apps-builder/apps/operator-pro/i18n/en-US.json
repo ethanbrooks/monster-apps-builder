@@ -1,0 +1,62 @@
+{
+	"operatorApp": {
+		"employees": "Employees",
+		"devices": "Devices",
+		"appName": "Operator Console",
+		"panel": {
+			"title": {
+				"myActiveIncomingCalls": "my active/incoming calls",
+				"myParkedCalls": "parked calls"
+			},
+			"empty": {
+				"noParkedCalls": "No Parked Calls",
+				"noActiveCalls": "No Active Calls"
+			}
+		},
+		"filters": {
+			"all": "All",
+			"available": "Available",
+			"busy": "Busy"
+		},
+
+		"callTexts": {
+			"unknown": "Unknown",
+			"onCall": "On call",
+			"ringing": "Ringing",
+			"from": "From",
+			"to": "To"
+		},
+
+		"pro": {
+			"masqueradingAlert": "Some features are hidden (like the bottom bar) because they are only accessible on the account you logged in with.",
+			"quickCallPopover": {
+				"title": "Make a Call",
+				"number": "Number to Call",
+				"device": "Device to Call With",
+				"connect": "Connect",
+				"invalidQuickcallNumber": "The phone number entered is not valid",
+				"successConnect": "Placing a call from {{device}} to {{destination}}...",
+				"noDevices": "You have no registered devices"
+			},
+			"transfer": "Transfer",
+			"retrieve": "Retrieve",
+			"noWebphoneAllowed": "You didn't allow the system to create a webphone, so the feature will remain disabled.",
+			"webphoneConnected": "You are now connected to your webphone.",
+			"waitMediaShared": "Waiting...",
+			"ringing": "Ringing...",
+			"call": "Call",
+			"parkingPopover": {
+				"title": "Designate a Parking Slot",
+				"park": "Park",
+				"headline": "Enter a parking slot for this call"
+			},
+			"webphone": "Web Phone",
+			"webphoneCallElement": {
+				"holdAccept": "Hold & Accept",
+				"hangupAccept": "Hangup & Accept",
+				"ignore": "Ignore",
+				"pickup": "Accept"
+			}
+		}
+	}
+}

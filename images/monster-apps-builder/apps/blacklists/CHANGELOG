@@ -1,0 +1,15 @@
+Release Summary for 4.2.0
+  Difference between master and 4.1
+  * Summary
+      - As a FEE, I want to use lodash instead of underscorejs so that I have access to more utilities
+  * Commits
+      - [Merge pull request #3 from 2600hz/UI-2866
+  UI-2866: Migrate from underscore to lodash](https://github.com/2600hz/monster-ui-blacklists/commit/80d40579e4bfa2fa32b6865ff5a35e9a6e226a56) by Joris Tirado
+      - [UI-2866: Migrate underscore specific utils to lodash](https://github.com/2600hz/monster-ui-blacklists/commit/2ca679704ed17cf03f8c593bf1830a4855d86894) by Joris Tirado
+      - [UI-2866: Reference lodash intead of underscore following migration](https://github.com/2600hz/monster-ui-blacklists/commit/df05dd52fa6576c9a25302e64c16e126caff222b) by Joris Tirado
+  * Summary
+      - As a FEE, I want to add updated App Icons to the project so they look better to the end-user
+  * Commits
+      - [UI-2855: add new icon to blacklists app](https://github.com/2600hz/monster-ui-blacklists/commit/62f4559f9e34accf281ad5201465c921503c6f5c) by Jean-Roch Maitre
+  * [OOB: Updating metadata for blacklist app](https://github.com/2600hz/monster-ui-blacklists/commit/296fa20a66640e5b5eba4b052348b26660ab3374) by JR Maitre
+ -- 2600Hz Offical <packages@2600hz.com>  Wed, 27 Sep 2017 23:10:19 +0000

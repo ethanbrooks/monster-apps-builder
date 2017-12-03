@@ -1,0 +1,31 @@
+{
+	"name": "call-recording",
+	"i18n": {
+		"en-US": {
+			"label": "Call Recording",
+			"description": "The Call Recording App lets you manage the Call Recording settings of the accounts, users or devices.",
+			"extended_description": "",
+			"features": [
+				"Call Recording Settings"
+			]
+		}
+	},
+	"tags": [
+		"developer"
+	],
+	"icon": "Call_Recording_app.png",
+	"api_url": "http://10.26.0.41:8000/v2",
+	"author": "2600Hz",
+	"version": "1.0",
+	"license": "-", 
+	"price": 0,
+	"screenshots": [
+		"Configuration__Account.png",
+		"Configuration__Users.png"
+	],
+	"urls": {
+		"documentation": "{documentation_url}",
+		"howto": "{howto_video_url}"
+	},
+	"pvt_type": "app"
+}

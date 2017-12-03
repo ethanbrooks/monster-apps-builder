@@ -1,0 +1,48 @@
+{
+	"blacklistsApp": {
+		"misc": {
+			"enabled": "Enabled",
+			"name": "Name"
+		},
+		"toastr": {
+			"warning": {
+				"invalidNumbers": "Invalid Numbers: {{variable}}"
+			}
+		},
+		"edit": {
+			"titles": {
+				"details": "Details",
+				"numbers": "Numbers"
+			}
+		},
+		"wizard": {
+			"configure": {
+				"title": "Configure your Blacklist",
+				"labels": {
+					"block": "Block Anonymous",
+					"enable": "Enable on Creation"
+				}
+			},
+			"numbers": {
+				"title": "Add Numbers to your Blacklist",
+				"titles": {
+					"enterNumbers": "Enter Numbers to Block",
+					"numbersOn": "Numbers on This Blacklist"
+				},
+				"emptyList": "You have not added any numbers to your blacklist yet.",
+				"buttons": {
+					"addNumbers": "Add Numbers",
+					"create": "Create Blacklist",
+					"back": "Back"
+				}
+			}
+		},
+		"listing": {
+			"button": "New Blacklist",
+			"empty": {
+				"title": "There are no blacklist for this account.",
+				"text": "Hmm... this blue button seems important..."
+			}
+		}
+	}
+}

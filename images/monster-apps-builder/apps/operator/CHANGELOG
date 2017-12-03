@@ -1,0 +1,7 @@
+Release Summary for 4.2.1
+  Changes to 4.2 after version 4.2.0
+  * Summary
+      - Operator console crash when id not found in users/devices
+  * Commits
+      - [UI-2936: fix issues when user/device id are not found in the current account](https://github.com/2600hz/monster-ui-operator/commit/0b9832937a399fce4a08ef2e8096d5b76beebdd6) by Jean-Roch Maitre
+ -- 2600Hz Offical <packages@2600hz.com>  Wed, 18 Oct 2017 23:44:57 +0000

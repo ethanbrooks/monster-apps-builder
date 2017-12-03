@@ -1,0 +1,54 @@
+Call Center Lite Alpha:
+
+  Back-End:
+    - sending list of queue an agent belongs to on status change: sending the list of queues on recipient events would be tricky because the recipient doesn't actually keep track of which queues it is in
+    - emit queue status on status change: emit as little as possible, think that will be too spammy
+
+    Callflow:
+      ✔ callflow qubicle module should use `ìd` to reference a queue @done (16-10-10 16:39)
+
+    Qubicle:
+      ☐ typo in queue stats API payload ("avg_call-time" instead of "avg_call_time") @critical
+      ✔ recipient stats properties should be in snake_case @high @done (16-11-03 13:41)
+      ✔ when switching from Wrap-up to Ready/Away, WS event is triggered correctly but API still sends state as 'Wrapup-Time' @critical @done (16-11-02 16:56)
+      ✔ wrapup_extend action not working (500: invalid action) @critical @done (16-11-02 16:56)
+      ✔ offered_call/handling_call properties should be in snake_case @low @done (16-10-27 15:26)
+      ✔ can't switch from 'Wrapup-Time' to 'Ready' or 'Away' @critical @done (16-10-27 13:23)
+      ✔ agent status API should send back wrapup_time_seconds when in Wrapup-Time @critical @done (16-10-27 11:53)
+      ✔ need call information on recipient status API @critical @done (16-10-13 13:04)
+
+    WebSocket:
+      ✔ duplicate events for queues @low @done (16-11-03 12:01)
+      ✔ send back stats on queue event @critical @done (16-11-02 16:53)
+      ✔ send back stats on recipient event (login_time, last_action_time) @critical @done (16-11-02 16:53)
+      ✔ send back stats on recipient event (missed_calls, total_calls, wrapup_time_seconds) @critical @done (16-10-27 13:19)
+      ✔ need call information on recipient WS event @critical @done (16-10-13 13:04)
+      ✔ 'Wrap-up' event @done (16-10-11 10:31)
+        ✔ no documented @done (16-10-10 17:39)
+        ✔ will add a wrapup_time_seconds to the 'hangup' event if setup in the queue @done (16-10-10 17:38)
+        ✔ will create a 'Wrapup-Up-Done' event on wrapup_time timeout @done (16-10-10 17:38)
+      ✔ 'Rescind' event @done (16-10-11 10:31)
+        ✔ no documented @done (16-10-10 17:40)
+        ✔ when hangup during 'offer' event, should return agent to 'ready' state @done (16-10-10 16:45)
+      ✔ 'Delivered' WS event => need queue_id @done (16-10-10 17:38)
+      ✔ 'Hangup' WS event => need queue_id @done (16-10-10 17:38)
+
+  Front-End:
+    ☐ figure out timers issue (getting the right one + out-of-sync) @critical
+    ☐ add walk-through @low
+    ✔ simplify onAgentDelete method @low @done (16-11-04 13:41)
+    ✔ use i18n in every templates @high @done (16-11-01 15:10)
+    ✔ add "extend wrapup time" feature @high @done (16-10-31 17:19)
+    ✔ use data from WS queue event to update queues stats @critical @done (16-10-31 17:19)
+    ✔ use data from WS recipient event to update user info/stats on relevant events @critical @done (16-10-27 14:33)
+    ✔ use data from WS recipient events to update agent element on relevant events @critical @done (16-10-27 14:33)
+    ✔ update login/logout mechanism and use new POST endpoint @critical @done (16-10-27 11:53)
+    ✔ caret bug when collapsing the queue while agent managment view is in DOM @low @done (16-10-31 17:05)
+
+  UX:
+    ☐ show queue extension/number => callflow filtering does not send back queueId @low
+      (id not available on qubicle callflow listing)
+    ☐ show agent info (pincode, presence ID) @low
+      (need to be configured when user becomes an agent)
+    ☐ handle "not running" queue status @high
+    ☐ view listing for regular user @high

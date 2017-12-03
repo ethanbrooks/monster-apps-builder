@@ -1,0 +1,10 @@
+Release Summary for 4.2.0
+  Difference between master and 4.1
+  * Summary
+      - As a FEE, I want to use lodash instead of underscorejs so that I have access to more utilities
+  * Commits
+      - [UI-2866: Reference lodash intead of underscore following migration (#1)](https://github.com/2600hz/monster-ui-dialplans/commit/8ee8806236b0e1a96be2f6dbfebb8db9be6b1bb9) by Joris Tirado
+  * [OOB: Updating metadata for dialplans app](https://github.com/2600hz/monster-ui-dialplans/commit/b06419369560f3ca406956cbe0bc0b2cd9ae7626) by JR Maitre
+  * [OOB: Cleaning up code](https://github.com/2600hz/monster-ui-dialplans/commit/76105e1aa640ee8e99bffdbc76a29a81a4cb60bb) by Jean-Roch Maitre
+  * [OOB: remove pagination for users/device list](https://github.com/2600hz/monster-ui-dialplans/commit/fe28ef79626d1a10ad97fdd680c64ae611ea6c96) by Jean-Roch Maitre
+ -- 2600Hz Offical <packages@2600hz.com>  Wed, 27 Sep 2017 22:26:54 +0000

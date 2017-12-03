@@ -1,0 +1,16 @@
+Release Summary for 4.2.0
+  Difference between master and 4.1
+  * Summary
+      - As a FEE, I want to use lodash instead of underscorejs so that I have access to more utilities
+  * Commits
+      - [UI-2866: Reference lodash intead of underscore following migration (#3)](https://github.com/2600hz/monster-ui-reporting/commit/b70b0f9bca63b978d540187132c54441d7b3ee64) by Joris Tirado
+  * Summary
+      - As a FEE, I want ESLint errors/warnings to be fixed for the Reporting app so that the codebase is consistent
+  * Commits
+      - [UI-2839: Fix ESLint erros/warnings (#2)](https://github.com/2600hz/monster-ui-reporting/commit/9bfeb1c37b950fc9b5b6dfb6dda97c37bc524615) by Joris Tirado
+  * Summary
+      - As a FEE, I want the core-content id to use snake case so that all ids are in the format
+  * Commits
+      - [UI-2694: Normalize core content id name to snake case (#1)](https://github.com/2600hz/monster-ui-reporting/commit/dfb67a1001f8227130206bf8623f1ca01f99d40a) by Joris Tirado
+  * [OOB: Updated metadata](https://github.com/2600hz/monster-ui-reporting/commit/4df72651cc19d43d774b6fee38b53a153d111369) by JR Maitre
+ -- 2600Hz Offical <packages@2600hz.com>  Wed, 27 Sep 2017 22:46:23 +0000

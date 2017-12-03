@@ -1,0 +1,34 @@
+{
+	"name": "reporting",
+	"i18n": {
+		"en-US": {
+			"label": "Reseller Reporting",
+			"description": "Reseller Reporting generates billing and usage information that to aid 2600Hz resellers in the billing of their customers. Upon request, this app will generate an Excel document for each customer, providing usage detail on each account. Resellers may then choose to adjust their prices for services. Customers may have both recurring charges and usage charges – which is where resellers can decide their billing strategy. With one click, resellers may run a report for all of their sub accounts or even for subsets of their accounts. Additionally, summaries may be made by country for each sub account and edited in excel to fit reseller needs.",
+			"extended_description": "",
+			"features": [
+				"One click reporting",
+				"Oversubscribing",
+				"CSV summary of all accounts",
+				"Flat-rate vs per-minute price flexibility ",
+				"Usage by country"
+			]
+		}
+	},
+	"tags": [
+		"reseller"
+	],
+	"icon": "Reporting_app.png",
+	"api_url": "http://10.26.0.41:8000/v2",
+	"author": "2600Hz",
+	"version": "1.0",
+	"license": "-",
+	"price": 0,
+	"screenshots": [
+		"reporting_1.png"
+	],
+	"urls": {
+		"documentation": "{documentation_url}",
+		"howto": "{howto_video_url}"
+	},
+	"pvt_type": "app"
+}

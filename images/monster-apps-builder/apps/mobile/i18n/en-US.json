@@ -1,0 +1,495 @@
+{
+	"mobileApp": {
+		"appName": "Mobile Manager",
+		"menus": {
+			"devicesList": "Your Devices",
+			"porting": "Porting",
+			"accountSettings": "Account Settings",
+			"provisioning": "Provisioning",
+			"checkCoverage": "Check Coverage",
+			"faq": "FAQ"
+		},
+		"porting": {
+			"list": {
+				"empty": {
+					"title": "It looks like you haven't made any port requests yet.",
+					"text": "Hmm... this blue button seems important..."
+				},
+				"button": "Request New Port",
+				"thead": {
+					"number": "Number",
+					"submitted": "Submitted",
+					"submittedBy": "Submitted By",
+					"status": "Status"
+				},
+				"status": {
+					"submitted": "Port Requested",
+					"rejected": "Porting Error - Needs Attention",
+					"pending": "Request Submitted to Old Carrier",
+					"scheduled": "Port Scheduled",
+					"canceled": "Port Canceled",
+					"completed": "Port Completed Successfully"
+				},
+				"extendedStatus": {
+					"updateSent": "Update Sent",
+					"cancelSent": "Cancel Sent"
+				}
+			},
+			"detail": {
+				"header": "Porting request for:",
+				"info": {
+					"title": "Detail",
+					"labels": {
+						"target": "Target Device",
+						"submitted": "Submitted",
+						"submittedBy": "Submitted By"
+					}
+				},
+				"status": {
+					"title": "Status",
+					"steps": {
+						"requested": "Port Requested",
+						"validated": "Coverage & Device Validated",
+						"submitted": "Request Submitted to Old Carrier",
+						"scheduled": "Port Scheduled",
+						"completed": "Port Completed Successfully",
+						"canceled": "(Port request was canceled)"
+					}
+				},
+				"confirm": {
+					"title": "A Porting Error Occurred",
+					"text1": "The previous carrier has rejected this port request for the following reason:",
+					"text2": "Would you like to edit end resubmit this port request?",
+					"buttons": {
+						"cancel": "Cancel Port Request",
+						"ok": "Edit & Retry Port Request"
+					}
+				}
+			},
+			"prevalidate": {
+				"title": "Before you port your number, let's check if it's valid first",
+				"text": "In order to do this, all you need is the phone number you want to port.",
+				"placeholder": "Phone Number",
+				"button": "Validate My Number",
+				"success": {
+					"title": "Number validation successful",
+					"text": "Your phone number is valid, you can now start a new port.",
+					"button": "Start Port"
+				},
+				"error": {
+					"title": "Oh no! This number could not be validated",
+					"text": "Please check the phone number and try again",
+					"button": "Back"
+				}
+			},
+			"wizard": {
+				"legend": "Request a New Port",
+				"button": "Submit Request",
+				"deviceSelection" : {
+					"title": "Device Selection",
+					"infoText": "Select the device that you would like to port a number to",
+					"placeholder": "Select a device",
+					"labels": {
+						"currentMdn": "Current MDN",
+						"manufacturer": "Manufacturer",
+						"model": "Model"
+					}
+				},
+				"portInfo": {
+					"title": "Port Info",
+					"label": "Number to Port In"
+				},
+				"carrierInfo": {
+					"title": "Previous Carrier Info",
+					"infoText": "What type of account is the number above registered under",
+					"radioButtons": {
+						"personal": "Personal Account",
+						"business": "Business Account"
+					},
+					"fields": {
+						"businessName": {
+							"label": "Business Name",
+							"placeholder": "Some Business"
+						},
+						"accountNumber": {
+							"label": "Account Number",
+							"placeholder": "1234567890987654321"
+						},
+						"accountPassword": {
+							"label": "Account Password"
+						},
+						"owner": {
+							"labelPersonal": "Billing Name",
+							"labelBusiness": "Account Owner",
+							"placeholders": {
+								"fullName": "Full Name",
+								"firstname": "First",
+								"lastname": "Last"
+							}
+						},
+						"billingAddress": {
+							"label": "Billing Address",
+							"placeholders": {
+								"streetNumber": "Street Number",
+								"street": "Street Name",
+								"city": "City",
+								"zipCode": "ZIP Code",
+								"state": "State"
+							}
+						},
+						"ssn": {
+							"label": "Last 4 SSN digits",
+							"placeholder": "1234"
+						},
+						"taxIdentification": {
+							"label": "Tax ID",
+							"placeholder": "12-3456789"
+						}
+					}
+				}
+			}
+		},
+		"accountSettings": {
+			"limits": {
+				"legend": "Account Limits",
+				"helpText": "Setting Account Limits allows Administrators to control how much data this account is allowed to use on a monthly basis, and set policy for what happens when usage goes over the Limit.",
+				"accountDataLimit": {
+					"label": "Account Data Limit (monthly)*",
+					"tooltip": "Administrators can set Account Limits to control how much Data this account is allowed to use on a monthly basis, and decide whether or not to throttle data when nearing the limit.",
+					"helpText": "(rounded to nearest 100 MB)"
+				},
+				"checkboxes": {
+					"warnAdministrators": "Warn Administrators that the account is nearing limit",
+					"throttleData": "Throttle data when nearing limit"
+				}
+			},
+			"defaults": {
+				"legend": "Default Settings for New Device",
+				"helpText": "The following settings allow Account Administrators to set a \"default\" that will apply to all created devices in the account. These default device settings will be applied during the initial attachment of the device to this acccount, but can be changed under the Limits tab in ‘Device Settings’ for each individual device.",
+				"limits": {
+					"title": "Device Limits",
+					"montlyDataLimit": {
+						"label": "Monthly Data Limit*",
+						"tooltip": "Data enabled services will stop working on devices once this limit is reached. If certain devices require higher limits, this default limit can be overridden in each individual device’s settings under the ‘Limits’ tab.",
+						"helpText": "(rounded to nearest 100 MB)"
+					},
+					"checkboxes": {
+						"sendWarning": "Send a warning notification when devices are nearing their limit to",
+						"throttleData": "Throttle data when nearing limit"
+					}
+				},
+				"features": {
+					"title": "Features",
+					"tooltips": {
+						"tethering": "This option allows this device to be used as a Mobile Hotspot. All bandwidth consumed in Hotspot Mode will be attributed to this device."
+					}
+				}
+			}
+		},
+		"devicesList": {
+			"title": "It looks like you haven't activated any mobile devices yet.",
+			"text": "Hmm... this blue button seems important...",
+			"buttons": {
+				"activate": "Activate New Device",
+				"download": "Download CSV"
+			},
+			"button": "Activate New Device",
+			"table": {
+				"headers": {
+					"usage": "Current Data Usage",
+					"name": "Name",
+					"mdn": "MDN",
+					"esn": "ESN",
+					"model": "Model"
+				},
+				"labels": {
+					"suspended": "Device Suspended",
+					"dataLimit": "Data Limit Reached"
+				}
+			}
+		},
+		"deviceInfo": {
+			"header": {
+				"features": "Features",
+				"replaceDevice": "Device Swap",
+				"offnetRouting": "Offnet Routing",
+				"editName": "Edit Name",
+				"deviceCarrierInfo": "Device & Carrier Info",
+				"deviceLimits": "Limits",
+				"deviceUsage": "Usage History"
+			},
+			"legends": {
+				"deviceInfo": "Device Info",
+				"subscriptionInfo": "Subscription Info"
+			},
+			"labels": {
+				"newIdentifier": "New ESN/MEID/IMEI",
+				"simId": "SIM ID",
+				"enableOffnetRouting": "Enable Offnet Routing",
+				"realm": "Realm",
+				"username": "Username",
+				"password": "Password",
+				"clusterId": "Cluster ID",
+				"externalCluster": "Route to external cluster?",
+				"manufacturer": "Manufacturer",
+				"modelName": "Model Name",
+				"modelNumber": "Model Number",
+				"deviceSerialNumber": "Device Serial Number",
+				"deviceType": "Device Type",
+				"esn": "ESN",
+				"imsi": "IMSI",
+				"msl": "MSL",
+				"mdn": "MDN",
+				"sim": "SIM",
+				"activationDate": "Activation Date",
+				"expirationDate": "Expiration Date",
+				"plan": "Plan"
+			},
+			"buttons": {
+				"clear": "Clear",
+				"restore": "Restore Device",
+				"suspend": "Suspend Device",
+				"repair": "Repair",
+				"backToDevices": "Back To Devices",
+				"updateDevice": "Update Device"
+			},
+			"confirm": {
+				"suspension": {
+					"title": "Are you sure?",
+					"suspend": {
+						"text": "You are about to suspend this device, which means it will no longer be able to make/receive voice calls or use data and messaging services. Are you sure you want to do this?",
+						"ok": "Yes, Suspend This Device"
+					},
+					"restore": {
+						"text": "You are about to restore this device, which means it will be able to make/receive voice calls or use data and messaging services. Are you sure you want to do this?",
+						"ok": "Yes, Restore This Device"
+					}
+				}
+			}
+		},
+		"deviceLimits": {
+			"limits": {
+				"title": "Data Limits",
+				"limitDeviceData": {
+					"label": "Limit Device Data",
+					"confirm": {
+						"title": "Warning! Are you absolutely sure?",
+						"text": "Turning off Device Limits while still allowing the device to be used as a mobile hotspot means this device is allowed to use all monthly alloted data for this account. This is very dangerous and can become very costly.",
+						"confirmButton": "Yes, Turn off Device Data"
+					}
+				},
+				"monthlyDataLimit": {
+					"label": "Monthly Data Limit*",
+					"helpText": "(rounded to nearest 100 MB)"
+				},
+				"checkboxes": {
+					"throttleData": "Throttle data when nearing limit"
+				}
+			}
+		},
+		"deviceUsage": {
+			"thead": {
+				"date": "Date",
+				"time": "Time",
+				"dataAmount": "Data Amount"
+			},
+			"noData": "No usage for this period"
+		},
+		"esnCheck": {
+			"title": "Before you activate your device, let's check if it's valid first",
+			"text": "In order to do this, all you need is the device's ESN / IMEI / MEID.",
+			"placeholder": "ESN / IMEI / MEID",
+			"button": "Validate"
+		},
+		"deviceValidation": {
+			"success": {
+				"title": "Device validation successful",
+				"text": "It is recommended that you check service coverage for the area in which the phone will be primarily used. If you have previously checked coverage and/or are already aware of service availability, you can skip ahead to the Ownership Swap phase.",
+				"buttons": {
+					"cancel": "Cancel",
+					"checkCoverage": "Check Coverage",
+					"skipToActivation": "Skip To Activation"
+				}
+			},
+			"error": {
+				"title": "Oh no! This device could not be validated",
+				"texts": {
+					"esnInUse": "The ESN is already in use.",
+					"invalidEsn": "Please check the ESN and try again."
+				},
+				"button": "Back"
+			}
+		},
+		"deviceActivation": {
+			"title": "Alright, let's activate that device now!",
+			"text": "In order to activate your device, please enter the ZIP code in which the phone will primarily be used. You will also need to name your device so you can configure it throughout the system.",
+			"placeholders": {
+				"sim": "SIM Number (ICC)",
+				"zipCode": "ZIP code",
+				"deviceName": "Name your device"
+			},
+			"labels": {
+				"linkDevice": "Link this device to a user",
+				"LinkVoicemailBox": "Link a voicemail box to this device"
+			},
+			"button": "Activate Device"
+		},
+		"activationSuccess": {
+			"titles": {
+				"overview": "Device successfuly activated!",
+				"provisioning": "Almost finished ... only one more step required for this device."
+			},
+			"texts": {
+				"overview": "Here is your device overview:",
+				"provisioning": "In order to make and receive calls using this newly activated device, it will need to be provisioned on the network. After provisioning this device, it will become available in SmartPBX. From there, all you need to do is assign a user and an associated callflow to use this device."
+			},
+			"labels": {
+				"deviceName": "Device Name",
+				"deviceMdn": "Device MDN",
+				"deviceEsn": "Device ESN",
+				"zipCode": "ZIP Code"
+			},
+			"button": "Provision This Device"
+		},
+		"checkZipCode": {
+			"titles": {
+				"normal": "Check service coverage",
+				"activating": "Next, it's highly recommended to check service coverage"
+			},
+			"text": "To check coverage, enter the ZIP code for the area in which the phone will be primarily used.",
+			"placeholder": "ZIP Code",
+			"button": "Check Coverage"
+		},
+		"coverageInfo": {
+			"title": "Service coverage for:",
+			"signalTypes": {
+				"lte": "LTE",
+				"cdma": "CDMA",
+				"wimax": "WIMAX"
+			},
+			"buttons": {
+				"check": "Check Another ZIP Code",
+				"activate": "Proceed To Activation"
+			}
+		},
+		"provisioning": {
+			"titles": {
+				"selectCategory": "Please select the category that your device falls under.",
+				"instructions": "provisioning instructions"
+			},
+			"categories": {
+				"iphone": {
+					"label": "iPhone",
+					"instructions": [
+						"Connect to a Wi-Fi network",
+						"Restart phone",
+						"Within 2-3 minutes, the phone should start a Hands Free Activation on its own"
+					]
+				},
+				"nexus_5": {
+					"label": "Nexus 5",
+					"instructions": [
+						"Carrier Wipe - Open Dialer, Dial *#*#72786#*#* , Phone will restart and indicate that it is activating",
+						"Update Profile - Apps -> Settings -> More -> Mobile networks -> Carrier settings -> Update Profile",
+						"Update PRL - Apps -> Settings -> More -> Mobile networks -> Carrier settings -> Update PRL"
+					]
+				},
+				"nexus_other": {
+					"label": "Nexus (Other)",
+					"instructions": [
+						"Carrier Wipe - Open Dialer, Dial *#*#72786#*#*, Enter MSL, Touch OK",
+						"System Update - Application->Settings->About Phone->Sprint System Updates",
+						"Update Profile - Application->Settings->About Phone->Sprint System Updates->Update Profile",
+						"Update PRL - Application->Settings->About Phone->Sprint System Updates->Update PRL"
+					]
+				},
+				"most_samsung_motorola_htc_devices": {
+					"label": "Most Samsung / Motorola / HTC Devices",
+					"instructions": [
+						{
+							"label": "Carrier Wipe - Open Dialer, Dial ##72786#,  enter MSL (6 digits), then...",
+							"instructions": [
+								"Samsung: Touch OK",
+								"Motorola: Touch YES",
+								"HTC:  Press \"MENU\", Select Reset, Phone should powercycle"
+							]
+						},
+						"System Update - Appliction->Settings->System Updates",
+						"Profile Update - Application->Settings->System Updates->Update Profile",
+						"PRL Update - Application->Settings->System Updates->Update PRL"
+					]
+				},
+				"htc_arrice_most_windows_devices": {
+					"label": "HTC Arrive & Most Windows Devices",
+					"instructions": [
+						"Settings -> Cellular -> Make sure Data Connection is on -> Change Network Profile -> Close -> Change PRL -> Close"
+					]
+				},
+				"feature_unlisted_generic": {
+					"label": "Feature / Unlisted / Generic",
+					"instructions": [
+						"Carrier Wipe - Open Dialer, Dial ##72786#,  enter MSL, Touch OK",
+						"System Update - Appliction->Settings->System Updates",
+						"Profile Update - Application->Settings->System Updates->Update Profile",
+						"PRL Update - Application->Settings->System Updates->Update PRL"
+					]
+				}
+			},
+			"buttons": {
+				"back": "Back To Device Categories",
+				"done": "I'm Done"
+			}
+		},
+		"loadingTitles": {
+			"titles": {
+				"searchingRequest": "Searching request...",
+				"submittingRequest": "Submitting request...",
+				"validateNumber": "Validating number...",
+				"searchingDevice": "Searching device...",
+				"validatingDevice": "Validating device...",
+				"checkingCoverage": "Checking coverage...",
+				"activatingDevice": "Activating device..."
+			},
+			"texts": {
+				"activatingDevice": "This will take up to two minutes... thanks for your patience."
+			}
+		},
+		"confirmPopup": {
+			"leavingActivation": "You are about to leave the activation process! Are you sure?",
+			"deleteDevice": {
+				"title": "Are you sure you want to delete the device: ",
+				"text": "You can always re-activate a device after deleting it. However, you may permenatly lose the phone number attached to this device, and upon re-activation , be assigned a new number.",
+				"confirmButton": "Delete Device"
+			}
+		},
+		"toastr": {
+			"info": {
+				"updateFeature": "No feature to update"
+			},
+			"warning": {
+				"areaNotCovered": "Area not covered!",
+				"noUsageData": "No data usage for the past month!",
+				"invalidZipCode": "Invalid ZIP code!"
+			}
+		},
+		"misc": {
+			"admin": "Admin",
+			"unknown": "Unknown",
+			"back": "Back",
+			"callflowName": "Mobile Callflow ({{variable}})",
+			"labels": {
+				"allowHotspot": "Allow Mobile Hotspot",
+				"enableMessaging": "Enable SMS & MMS"
+			},
+			"usageWidget": {
+				"totalAccount": "TOTAL ACCOUNT DATA USAGE",
+				"totalDevice": "TOTAL DEVICE DATA USAGE",
+				"unlimited": "Unlimited"
+			},
+			"sliderHandles": {
+				"warnAdministrators": "Warn Administrators at:",
+				"throttleData" : "Throttle Data at:"
+			}
+		}
+	}
+}

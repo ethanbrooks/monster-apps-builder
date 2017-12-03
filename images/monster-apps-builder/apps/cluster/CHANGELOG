@@ -1,0 +1,4 @@
+Release Summary for 4.2.1
+  Changes to 4.2 after version 4.2.0
+  * [CM 505: Redesign of the version manager to defer orchestration to CM (#10)  * CM-505: Send all tasks at once instead of one at the time  * CM-505: set interactively based on user selection  * CM-505: Fix formatting in files and add some changes to improve the UI  * CM-505: Disable button unless some options are checked  * CM-505: Display servers that won&#039;t get upgraded/downgraded if the version is either &gt;=/&lt;=  * CM-505: Display error message if current version is null  * CM-505: Add button to exit out from error page  * CM-505: Redirect to Running/Queued when exiting from error page  * CM-505: Fix items found after review](https://github.com/2600hz/monster-ui-cluster/commit/6fdf884290a40b9c0afe96f5dea0ecb9fa26b179) by Pilar Candia
+ -- 2600Hz Offical <packages@2600hz.com>  Wed, 11 Oct 2017 19:48:40 +0000

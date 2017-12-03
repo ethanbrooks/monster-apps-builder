@@ -1,0 +1,7 @@
+Release Summary for 4.2.1
+  Changes to 4.2 after version 4.2.0
+  * Summary
+      - As an admin I want the contact and source IPs in the debug app registration list to be links so that I can easily get to local devices
+  * Commits
+      - [UI-2940: adding links to contact and source IP for registrations table](https://github.com/2600hz/monster-ui-debug/commit/8eace41dc37d39cf88b4892010f670d244c03c50) by Jean-Roch Maitre
+ -- 2600Hz Offical <packages@2600hz.com>  Tue, 24 Oct 2017 22:44:30 +0000

@@ -1,0 +1,8 @@
+Release Summary for 4.2.0
+  Difference between master and 4.1
+  * Summary
+      - UI needs to be updated to be compatible with multi factor and security API new changes
+  * Commits
+      - [UI-2887: fixed api changes to auth security](https://github.com/2600hz/monster-ui-auth-security/commit/38f963904648a3dbeb09321f7db6ecb4d4ac784d) by Jean-Roch Maitre
+  * [OOB: prevent deletion of current account auth](https://github.com/2600hz/monster-ui-auth-security/commit/6902dad00038af7198ec7b823e7508564e51bb4d) by Jean-Roch Maitre
+ -- 2600Hz Offical <packages@2600hz.com>  Wed, 27 Sep 2017 23:13:45 +0000

@@ -1,0 +1,92 @@
+{
+	"conferences": {
+		"title": "Conferencing",
+		"menuTitles": {
+			"conferences": "Conferences",
+			"callInNumbers": "Call-in Numbers"
+		},
+		"listing": {
+			"table": {
+				"columns": {
+					"name": "Conference Name",
+					"number": "Number",
+					"pins": "PINs",
+					"owner": "Owner",
+					"participants": "Active Callers"
+				}
+			},
+			"actionBar": {
+				"createConference": "Create Conference"
+			},
+			"deleteConfirm": {
+				"content": "Are you sure you want to delete the \"{{variable}}\" conference from the system?",
+				"success": "You successfully deleted the \"{{variable}}\" conference from the system!",
+				"confirmButtonText": "Delete Conference",
+				"title": "Are you sure?"
+			},
+			"tooltips": {
+				"view": "View Conference",
+				"edit": "Settings",
+				"delete": "Delete",
+				"dontDelete": "You can not delete this conference as it has not been created in the Conference Manager."
+			}
+		},
+		"edition": {
+			"title": "Creating New Conference",
+			"details": "Details",
+			"options": "Options",
+			"name": "Conference Name",
+			"owner": "Conference Owner",
+			"moderatorPIN": "Moderator PIN",
+			"participantPIN": "Participant PIN",
+			"conferenceServerNumber": "Conference Server Number",
+			"conferenceIDNumber": "Conference ID Number",
+			"joinDeaf": "Participants join the conference deaf",
+			"joinMuted": "Participants join the conference muted",
+			"playEntryTone": "Play entry tone",
+			"playExitTone": "Play exit tone",
+			"ownerNotSet": "- Not Set -",
+			"validation": {
+				"numberString": "Please only enter numeric characters and commas"
+			},
+			"successUpdate": "You successfully saved changes to the \"{{variable}}\" conference!"
+		},
+		"callInNumbers": {
+			"callflowName": "Conference Call-In Number",
+			"table": {
+				"smartPBXMessage": "This number is associated with the SmartPBX Main Conference Number. Please head to the SmartPBX app to make changes.",
+				"columns": {
+					"number": "Assigned Conference Number"
+				}
+			},
+			"actionBar": {
+				"add": "Add Call-In Number",
+				"buyNumbers": "Buy New Numbers",
+				"addSpare": "Add from Spare Numbers",
+				"addExtension": "Assign New Extension"
+			},
+			"deleteConfirm": {
+				"content": "Are you sure you want to delete \"{{variable}}\" as a call-in number?",
+				"success": "You successfully removed \"{{variable}}\" as a call-in number!",
+				"confirmButtonText": "Remove Call-In Number",
+				"title": "Are you sure?"
+			},
+			"greetingsDialog": {
+				"title": "Number Settings",
+				"headline": "Welcome Prompt",
+				"media": "Media",
+				"defaultMedia": "- Default Greeting - ",
+				"successUpdate": "You successfully Updated the welcome prompt setting for the following Call-In Number: \"{{variable}}\""
+			},
+			"tooltips": {
+				"edit": "Customize Greeting",
+				"delete": "Delete",
+				"dontEdit": "This number was setup in SmartPBX and can not be customized in the Conference Manager.",
+				"dontDelete": "This number is associated with the SmartPBX Main Conference Number. Please head to the SmartPBX app to make changes."
+			}
+		},
+		"view": {
+			"backToListing": "Back To Conferences List"
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"name": "carriers",
+	"api_url": "http://10.26.0.41:8000/v2",
+	"i18n": {
+		"en-US": {
+			"label": "Carriers",
+			"description": "Set up and manage your carriers.",
+			"extended_description": "Carrier Manager frees you from dependency on a single carrier for pricing and allows a new level of cost control. You can sign your own contracts with carriers to transfer your voice traffic, with significant cost savings. Carrier Manager gives you complete control over the quality of the routes that you choose and lets you negotiate deals with large, small, rural or metropolitan interconnect peers. This allows you to customize the customer experience based on their business and budget requirements. Carrier Manager also allows you to set up complex routing rules based on the type of device placing a call and supports unlimited carriers, with seamless failover in the event of a carrier outage.",
+			"features": [
+				"Failover",
+				"Classify Routes",
+				"Add multiple backend carriers",
+				"Prioritize carriers",
+				"Personalize customer carrier solutions with templates"
+			]
+		}
+	},
+	"tags": [
+		"reseller",
+		"carrier"
+	],
+	"author": "2600hz",
+	"version": "1.0",
+	"license": "-",
+	"price": 0,
+	"icon": "Carriers_app.png",
+	"screenshots": [
+		"carriers_1.png",
+		"carriers_2.png",
+		"carriers_3.png"
+	],
+	"pvt_type": "app"
+}

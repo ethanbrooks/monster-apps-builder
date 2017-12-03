@@ -1,0 +1,4 @@
+Release Summary for 4.2.3
+  Changes to 4.2 after version 4.2.2
+  * [OOB: Group observed metrics by entity](https://github.com/2600hz/monster-ui-callqueues-reporting/commit/67b4e6c5fc1709eba758da9537d7451ad58d998a) by Joris Tirado
+ -- 2600Hz Offical <packages@2600hz.com>  Tue, 24 Oct 2017 23:00:45 +0000

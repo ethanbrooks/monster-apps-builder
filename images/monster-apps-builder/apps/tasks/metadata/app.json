@@ -1,0 +1,33 @@
+{
+	"name": "tasks",
+	"i18n": {
+		"en-US": {
+			"label": "CSV Jobs",
+			"description": "The CSV (comma separated value) Job is a way to bulk import large amounts of data in a way that the system understands how to delineate between values.  This saves the user from having to do each record/instance manually (ex. phone numbers or users).",
+			"extended_description": "",
+			"features": [
+				"Execute bulk operations on phone numbers",
+				"Generate reports",
+				"Compaction commands"
+			]
+		}
+	},
+	"tags": [
+		"reseller"
+	],
+	"icon": "CSV_jobs_app.png",
+	"api_url": "http://10.26.0.41:8000/v2",
+	"author": "2600Hz",
+	"version": "1.0",
+	"license": "-", 
+	"price": 0,
+	"screenshots": [
+		"JobsList.png",
+		"SelectNewJob.png"
+	],
+	"urls": {
+		"documentation": "{documentation_url}",
+		"howto": "{howto_video_url}"
+	},
+	"pvt_type": "app"
+}

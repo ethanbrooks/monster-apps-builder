@@ -1,0 +1,103 @@
+{
+	"authSecurity": {
+		"menuTitles": {
+			"userAuth": "User Authentication",
+			"apiKey": "API Key Authentication",
+			"jwt": "JWT",
+			"audit": "Audit"
+		},
+		"userAuth": {
+			"token": {
+				"title": "Settings",
+				"expiration": "Token Expiration",
+				"hours": "hours"
+			},
+			"enabled": "Enabled",
+			"logFailures": "Log Failure Attempts",
+			"logSuccesses": "Log Successful Attempts",
+
+			"multiFactorAuth": {
+				"title": "Multi-Factor Authentication (MFA)",
+				"hasConfigs": {
+					"title": "You haven't selected any Multi-Factor Configuration yet!",
+					"subTitle": "You have {{variable}} configuration(s) available, click on the button below to choose a configuration",
+					"button": "Choose a Multi-Factor Configuration"
+				},
+				"noConfigs": {
+					"title": "You don't have any configuration available to enable Multi-Factor Authentication (MFA)",
+					"subTitle": "In order to enable MFA, you need to configure an MFA integration (such as Duo for instance) on your account.",
+					"inheritTitle": "Multi-Factor Authentication isn't enabled for this account.",
+					"inheritSubTitle": "If you want to set a Multi-Factor Authentication, turn off the \"Inherit Parent Settings\" switch above."
+				},
+				"actions": {
+					"change": "Change",
+					"remove": "Remove"
+				},
+				"settings": {
+					"enabled": "MFA Enabled",
+					"enabledSubAccounts": "MFA Enabled for sub-accounts"
+				},
+
+				"inherit": "Inherit Parent Settings"
+			},
+			"choicePicker": {
+				"mainTitle": "Your Multi-Factor Configurations",
+				"subTitle": "Please select from the following MFA options available on this account",
+				"buttonText": "Use Selected MFA Configuration"
+			},
+			"successSave": "You successfully saved your settings for User Authentication on this Account",
+			"confirmDelete": "It appears that you are trying to disable User Authentication for the Account you logged in with. Doing so will prevent you from logging in to that account in the future. Are you sure you want to proceed?"
+		},
+		"apiKey": {
+			"title": "Settings",
+			"tokenExpiration": "Token Expiration",
+			"hours": "hours",
+			"resetAPIKey": "Reset API Key",
+			"reset": "Reset",
+			"showAPIKey": "API Key Value",
+			"show": "Show",
+			"hide": "Hide",
+			"learnMore": "Learn More about the API Key",
+			"confirmReset": "This will invalidate any applications using the current API key. <br/><br/>After the reset you will need to copy the new API key to all your applications before they will be able to authenticate again. <br/><br/>This action will take effect immediately.",
+			"copyToClipboard": "Copy to Clipboard",
+			"enabled": "Enabled",
+			"logFailures": "Log Failure Attempts",
+			"logSuccesses": "Log Successful Attempts",
+			"successSave": "You successfully saved your settings for API Key Authentication on this Account"
+		},
+		"jwt": {
+			"title": "JSON Web Token",
+			"generateNewJWT": "Generate a new JWT Private Key",
+			"reset": "Reset",
+			"showPublicKey": "Show JWT Public Key",
+			"show": "Show",
+			"hide": "Hide",
+			"learnMore": "Learn More about JWT"
+		},
+		"attempts": {
+			"table": {
+				"columns": {
+					"date": "Date",
+					"ip": "IP",
+					"module": "Module",
+					"details": "Details"
+				},
+				"modules": {
+					"cb_user_auth": "User Auth",
+					"cb_api_auth": "API",
+					"cb_IP_auth": "IP"
+				}
+			},
+			"dialog": {
+				"title": "Attempt Details"
+			}
+		},
+		"toggleValues": {
+			"true": "On",
+			"false": "Off",
+			"on": "On",
+			"off": "Off",
+			"inherit": "Inherit"
+		}
+	}
+}

@@ -1,0 +1,15 @@
+Release Summary for 4.2.0
+  Difference between master and 4.1
+  * Summary
+      - As a FEE, I want to use lodash instead of underscorejs so that I have access to more utilities
+  * Commits
+      - [UI-2866: Reference lodash intead of underscore following migration (#2)](https://github.com/2600hz/monster-ui-duo/commit/c1067fbffa5f29d37cf8ab8bda7ecfc4de00075e) by Joris Tirado
+  * Summary
+      - As a FEE, I want to add updated App Icons to the project so they look better to the end-user
+  * Commits
+      - [UI-2855: add new icon to duo app](https://github.com/2600hz/monster-ui-duo/commit/5851c040fbc5e01feb01a8eb5cfbbd3ceacb9073) by Jean-Roch Maitre
+  * [OOB: Fix issue with duo app](https://github.com/2600hz/monster-ui-duo/commit/da67a59e24c5fe6dd8ff464be93b8de30aed09f6) by Jean-Roch Maitre
+  * [OOB: Updating metadata for duo app](https://github.com/2600hz/monster-ui-duo/commit/6fa5eecf8bdc335d2a869a8109d41217ed437ca9) by JR Maitre
+  * [attempts debug_type changed to status (#1)](https://github.com/2600hz/monster-ui-duo/commit/cd1ae9b812fa4e735b8c275731e0bc7dde760bf7) by icehess
+  * [OOB: Use updated property name to make menus float](https://github.com/2600hz/monster-ui-duo/commit/852f2dc85c67e83e06661f54eb500af9acc9065a) by Joris Tirado
+ -- 2600Hz Offical <packages@2600hz.com>  Wed, 27 Sep 2017 22:30:21 +0000

@@ -1,0 +1,152 @@
+{
+	"migration": {
+		"welcomeInstructions": {
+			"title": "Welcome to the Migration App",
+			"subtitle": "Select an account or subaccount in the tree to begin migration.",
+			"content": "The Migration App allows customers to seamlessly transfer your basic callflows to SmartPBX. Using the Migration App, port your existing callflows from your Kazoo account into your new Monster account within SmartPBX.",
+			"helpTitle": "Please Note:",
+			"helpText": "in order to migrate all of your information, you will need to migrate each subaccount independently of the parent account one at a time. Each account and sub account will individually need to be migrated. We recommend that you do this account by account, test it, and do it during non-business hours to avoid any disruption."
+		},
+		"accountTree": {
+			"collapseAll": "Collapse All",
+			"expandAll": "Expand All",
+			"alreadyMigrated": "This account has already been migrated successfully!"
+		},
+		"accountDetails": {
+			"startMigrationButton": "Start Migration",
+			"accountName": "Account Name:",
+			"accountRealm": "Account Realm:",
+			"accountId": "Account ID:",
+			"userCount": "Number of Users:",
+			"voicemailCount": "Number of Voicemails:",
+			"deviceCount": "Number of Devices:",
+			"groupCount": "Number of Groups:",
+			"callflowCount": "Number of Callflows:"
+		},
+		"migrationWizard": {
+			"stepTitles": {
+				"userStep": "Users",
+				"groupStep": "Ring Groups",
+				"faxingStep": "Fax Boxes",
+				"mainNumberStep": "Main Company Callflow",
+				"summaryStep": "Summary"
+			},
+			"stepUsers": {
+				"header": "The following callfows are available for migration into SmartPBX User callflows.",
+				"subHeader": "Please select which callflow you wish to migrate:",
+				"tableHeaders": {
+					"name": "Name / Numbers",
+					"user": "User",
+					"migrate": "Migrate Callflow",
+					"migrateAll": "All",
+					"migrateNone": "None"
+				},
+				"emptyList": "No User Callflow is available for migration."
+			},
+			"stepGroups": {
+				"header": "The following callfows are available for migration into SmartPBX User Groups callflows.",
+				"subHeader": "Please select which callflow you wish to migrate:",
+				"tableHeaders": {
+					"name": "Name / Numbers",
+					"users": "Users",
+					"usedBy": "Identical ring group found in",
+					"migrate": "Migrate Callflow",
+					"migrateAll": "All",
+					"migrateNone": "None"
+				},
+				"emptyList": "No User Group is available for migration."
+			},
+			"stepFaxing": {
+				"header": "The following Fax Boxes are available for migration.",
+				"subHeader": "Please select which Fax Boxes you wish to migrate:",
+				"tableHeaders": {
+					"name": "Name / Numbers",
+					"user": "User",
+					"migrate": "Migrate Callflow",
+					"migrateAll": "All",
+					"migrateNone": "None"
+				},
+				"emptyList": "No Fax Box is available for migration."
+			},
+			"stepMainNumber": {
+				"header": "Please choose one of the following callflows to use as your Main Company Callflow.",
+				"headerHelp": {
+					"line1": "SmartPBX enables you to set up an office or installation in minutes, improve reliability and functionality, and reduce installation and labor costs.",
+					"line2": "However, if you are using multiple offices, it is recommended that you select \"I do not want to set up my Main Company Number now.\""
+				},
+				"skipMainNumber": "I do not want to set up my Main Company Number now.",
+				"incomingCall": "Incoming Call",
+				"skipToVoicemail": "Skip to Voicemail",
+				"existingMainNumber": "A Main Company Callflow is already set up on your account.",
+				"callEntities": {
+					"users": "Users",
+					"devices": "Devices",
+					"groups": "Groups",
+					"voicemail": "Voicemail",
+					"other": "Other"
+				}
+			},
+			"stepSummary": {
+				"header": "The following callflows will be migrated:",
+				"userCallflowsHeader": "User callflows",
+				"noUserSelected": "No user callflow has been selected for migration.",
+				"groupCallflowsHeader": "Ring Groups",
+				"noGroupSelected": "No User Group has been selected for migration.",
+				"faxingCallflowsHeader": "Fax boxes",
+				"noFaxboxSelected": "No fax box has been selected for migration.",
+				"mainCallflowHeader": "Main Company Callflow",
+				"mainCallflowSkip": "You chose not to set up your Main Company Callflow now.",
+				"helpText": {
+					"title1": "Please Note:",
+					"line1": "The Migration App is a helper tool and the tool cannot migrate over everything. All features on existing numbers, such as Inbound and Outbound Caller ID or e911, will remain unchanged.",
+					"line2": "IMPORTANT: Once you choose to migrate these over, there is no way to reverse this."
+				}
+			},
+			"completionView": {
+				"processingHeader": "Please wait while we process the Migration",
+				"progressBar": {
+					"users": "Migrating Users...",
+					"groups": "Migrating User Groups...",
+					"faxing": "Migrating Fax Boxes...",
+					"mainCallflow": "Creating Main Callflow...",
+					"complete": "Migration Complete.",
+					"randomMessages": [
+						"Synthesizing binaries.",
+						"Hacking into the mainframe.",
+						"Activating unnecessary protocols.",
+						"Reverting critical changes.",
+						"Removing excessive layers.",
+						"Annihilating bugs.",
+						"Restarting secondary engines.",
+						"Downloading more RAM.",
+						"Deprecating main function.",
+						"Increasing power to 1.21 gigawatts.",
+						"Depolarizing devices.",
+						"Processing user background check.",
+						"Analysing unsollicited data.",
+						"Spreading rumors.",
+						"Calibrating cyclic rotations.",
+						"Ordering a pizza.",
+						"Dividing by zero."
+					]
+				},
+				"completeHeader": "All the selected data has been migrated successfully!",
+				"completeInfo": {
+					"line1": "The Main Number callflow, including IVRs and holidays, works differently in SmartPBX and needs to be configured manually. This page is an improvement that allows for easy configuration and full control of inbound calls for both you and your customer. Please be sure to access the Main Number Page in SmartPBX to complete you migration setup.",
+					"line2": "The community will give you the step-by-step instructions to set up a Main Number and Office Hours Strategy.",
+					"link": "Click Here!"
+				},
+				"backButton": "Back to the Account Tree"
+			},
+			"faxboxes": {
+				"nameExtension": "'s Faxbox",
+				"headerExtension": " Fax Printer"
+			},
+			"callflows": {
+				"userCallflowName": " SmartPBX's Callflow",
+				"userGroupName": " User Group",
+				"baseGroupName": " Base Group"
+			}
+		}
+	}
+}

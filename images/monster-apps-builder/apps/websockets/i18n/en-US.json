@@ -1,0 +1,55 @@
+{
+	"websockets": {
+		"appName": "WebSockets",
+		"dashboard": {
+			"title": "My WebSockets",
+			"welcome": "Welcome to the WebSockets App.",
+			"headline": "There's lots of things you can do with WebSockets!",
+			"description": "Bla Bla Bla"
+		},
+		"debug": {
+			"title": "Debug",
+			"table": {
+				"columns": {
+					"account": "Account Name",
+					"authToken": "Auth Token",
+					"sessionId": "WebSocket ID",
+					"bindings": "Bindings",
+					"sourceIP": "Source",
+					"destinationIP": "Destination",
+					"timestamp": "Timestamp",
+					"metadata": "Metadata",
+					"serviceName": "Service Name"
+				},
+				"empty": "It doesn't look like you have any active WebSocket connection.",
+				"goToIntroLink": "Check the Introduction page to see how to create your first one!"
+			},
+			"customEvents": {
+				"conferences": "Conferences",
+				"conferencesEvent": "Events",
+				"conferencesCommand": "Commands",
+				"selectConference": "Select a Conference",
+				"none": "None",
+				"active": "Active Custom Events"
+			},
+			"listenTooltip": "Start listening",
+			"muteTooltip": "Stop listening"
+		},
+		"sampleCode": {
+			"first": "WebSocket is a protocol providing full-duplex communication channels for real-time events over a single TCP connection. This means developers can set up their service to \"listen\" for Kazoo events like Call Hangup or events happening on a Conference bridge, for example. Check out the Debug screen for the complete list of available bindings.",
+			"second": "Let's show you an example in Javascript on how to write some code to listen to Kazoo events. First we'll open a connection to a WebSocket, then once it successfully opens, we will send some data to the WebSocket to tell the system that we want to be notified whenever a Channel is created in Kazoo for that account.",
+			"third": "Now that we subscribed to a binding, we need to write some code to handle the events that we will receive through the WebSocket.",
+			"fourth": "That's all you need to know to get started... For more documentation on WebSocket in JavaScript, you can check out this really good guide: ",
+			"title": "Introduction",
+			"snippet": {
+				"initialization": "First, we need to connect to a WebSocket server.",
+				"subscriptionCreation": "A subscription must include a valid pair of account_id / auth_token, and must include the binding that you want to listen to." ,
+				"subscriptionToString": "The data flowing through sockets must be a String, so we cast the JSON into a String",
+				"sendSubscription": "Once we properly configured our subscription, we can send the corresponding string to the WebSocket, which will notify the system that we want to subscribe to an event",
+				"onMessage": "The default event handler for WebSocket in JS is the onmessage function",
+				"ifBinding": "As there's only one function to handle all events, we need to check that the event data we received corresponds to our binding",
+				"doSomething": "Here is where you have access to the data of the event fired by the binding you're listening to, so you can use that data to display it on a UI, save it in a DB, whatever you want!"
+			}
+		}
+	}
+}

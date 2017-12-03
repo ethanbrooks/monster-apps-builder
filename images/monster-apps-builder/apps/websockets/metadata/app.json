@@ -1,0 +1,34 @@
+{
+	"name": "websockets",
+	"source_url": "http://webdev/monster-modules/websockets",
+	"i18n": {
+		"en-US": {
+			"label": "Websocket Manager",
+			"description": "Join the future of Real Time Dashboards and Call Control with full-duplex communication channels over a single TCP connection. Websockets makes providing relevant, real-time information easy and efficient, because it only has to load the data once, and subsequent data is only sent when the system detects an update. WebSockets allows UI developers the ability to connect to KAZOO and receive real-time event activity within their accounts. The app also has a secondary channel for control, so external systems can communicate with KAZOO over one single standard.",
+			"extended_description": "",
+			"features": [
+				"Detect calls/pickups/hangups & other events",
+				"Full-duplex",
+				"PBX events",
+				"View all Websockets for an account",
+				"Websockets debug helper"
+			]
+		}
+	},
+	"tags": [],
+	"icon": "WebSockets_app.png",
+	"api_url": "http://10.26.0.41:8000/v2",
+	"author": "2600Hz",
+	"version": "1.0",
+	"license": "-",
+	"price": 0,
+	"screenshots": [
+		"Debug__BindingSelected.png",
+		"WebsocketsOverview.png"
+	],
+	"urls": {
+		"documentation": "",
+		"howto": ""
+	},
+	"pvt_type": "app"
+}

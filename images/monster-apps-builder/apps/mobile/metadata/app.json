@@ -1,0 +1,38 @@
+{
+	"name": "mobile",
+	"i18n": {
+		"en-US": {
+			"label": "2600Hz Mobile",
+			"description": "2600Hz Mobile app",
+			"extended_description": "Easily activate and manage mobile phones, allowing customers to have the freedom to make and receive calls from any device, while enjoying the same robust calling features they enjoy in the office. 2600Hz Mobile integrates and interacts seamlessly with other business communication components.",
+			"features": [
+				"Activate a mobile device on the 2600Hz Mobile Network",
+				"Make PBX telephone features available natively to mobile devices",
+				"Latest name brand LTE handsets supported",
+				"Calls utilize CDMA/3G/4G networks on the voice channel",
+				"Mobile hotspot ",
+				"Set data limits",
+				"Support up to 150 MBP per second"
+			]
+		}
+	},
+	"tags": [
+		"reseller",
+		"carrier"
+	],
+	"icon": "Mobile_app.png",
+	"api_url": "http://10.26.0.41:8000/v2",
+	"author": "2600Hz",
+	"version": "1.0",
+	"license": "-",
+	"price": 0,
+	"screenshots": [
+		"DeviceSettings__Limits.png",
+		"DevicesList.png"
+	],
+	"urls": {
+		"documentation": "{documentation_url}",
+		"howto": "{howto_video_url}"
+	},
+	"pvt_type": "app"
+}

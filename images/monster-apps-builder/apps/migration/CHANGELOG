@@ -1,0 +1,23 @@
+Release Summary for 4.2.0
+  Difference between master and 4.1
+  * Summary
+      - As a FEE, I want to use lodash instead of underscorejs so that I have access to more utilities
+  * Commits
+      - [UI-2866: Migration from underscore to lodash (#5)
+  * UI-2866: Reference lodash intead of underscore following migration
+  * UI-2866: Migrate underscore specific utils to lodash](https://github.com/2600hz/monster-ui-migration/commit/7b9a4fe6f92f1ef8f4671f647bf4f1b80f9e0993) by Joris Tirado
+  * Summary
+      - As a FEE, I want ESLint errors/warnings to be fixed for the Migration app so that the codebase is consistent
+  * Commits
+      - [UI-2834: Fix switch statement keyword spacing (#4)](https://github.com/2600hz/monster-ui-migration/commit/fce6f49ae33ec271be21a57365933cafbde7a889) by Joris Tirado
+      - [UI-2834: Fix ESLint erros/warnings (#3)](https://github.com/2600hz/monster-ui-migration/commit/8530684b3277904dd4e30405c79f443c53721c39) by Joris Tirado
+  * Summary
+      - As a FEE, I want the core-content id to use snake case so that all ids are in the format
+  * Commits
+      - [UI-2694: Normalize core content id name to snake case (#2)](https://github.com/2600hz/monster-ui-migration/commit/e750539e3e1ebac5b769a41078d654c2cb308d4f) by Joris Tirado
+  * Summary
+      - As a FEE, I want `sortBy` to replace our util function so that I use native functions from underscore
+  * Commits
+      - [UI-2649: Use sortBy instead of monster.util.sort (#1)](https://github.com/2600hz/monster-ui-migration/commit/4944fc43e77ff01bb28b0c0cd898a46fbe1720e9) by Joris Tirado
+  * [OOB: Updated screenshots and description of migration app](https://github.com/2600hz/monster-ui-migration/commit/09e34d6609e2e60136d2547ba3ea8933929bf75f) by JR Maitre
+ -- 2600Hz Offical <packages@2600hz.com>  Wed, 27 Sep 2017 22:33:54 +0000

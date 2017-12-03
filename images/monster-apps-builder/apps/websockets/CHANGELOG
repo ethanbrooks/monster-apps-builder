@@ -1,0 +1,18 @@
+Release Summary for 4.2.0
+  Difference between master and 4.1
+  * Summary
+      - As a FEE, I want to use lodash instead of underscorejs so that I have access to more utilities
+  * Commits
+      - [UI-2866: Reference lodash intead of underscore following migration (#3)](https://github.com/2600hz/monster-ui-websockets/commit/e46371b9242abb978d8d60619485f285e827da3b) by Joris Tirado
+  * Summary
+      - As a FEE, I want ESLint errors/warnings to be fixed for Websockets Manager so that the codebase is consistent
+  * Commits
+      - [UI-2844: Fix ESLint erros/warnings (#2)](https://github.com/2600hz/monster-ui-websockets/commit/1811c1a9f5a34b1afab25d2e7a54d038bd5ecd42) by Joris Tirado
+  * Summary
+      - As a developer, I&#039;d like to have some documentation available about the Monster-UI apps layouts, so I know how to use them and the different settings available
+  * Commits
+      - [UI-2315: Use new parameter for floating navbar menus (#1)](https://github.com/2600hz/monster-ui-websockets/commit/89f90a73aebc4ced44d6b393bab512b82c19aed4) by Joris Tirado
+  * [Merge branch &#039;master&#039; of https://github.com/2600hz/monster-ui-websockets](https://github.com/2600hz/monster-ui-websockets/commit/dba3cc5568292692f3ddbeadae2504c7fa56e6ec) by JR Maitre
+  * [OOB: Updating metadata for websocket manager](https://github.com/2600hz/monster-ui-websockets/commit/b9eacc837a9e7a49b9f982e769a8b6d4784d1f15) by JR Maitre
+  * [OOB: Cleaning up prettyPrint reference](https://github.com/2600hz/monster-ui-websockets/commit/9ecb87404b8fc14d93bac4403ed5f38a985a1c05) by Jean-Roch Maitre
+ -- 2600Hz Offical <packages@2600hz.com>  Wed, 27 Sep 2017 22:56:09 +0000

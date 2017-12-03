@@ -1,0 +1,17 @@
+Release Summary for 4.2.1
+  Changes to 4.2 after version 4.2.0
+  * Summary
+      - As an admin, I want to be able to E/W/B on agents so that I can monitor them
+  * Commits
+      - [UI-933: Add e/w/b feature (#19)
+  * UI-2933: Add e/w/b controls and events handler
+  * UI-2933: Use sub-template for agent actions
+  * UI-2933: Refresh agent element actions on hang up
+  * UI-2933: Show agent element actions if on a call only
+  * UI-2933: Listen to wiretap WS events
+  * UI-2933: Filter wiretap WS events with action name
+  * UI-2933: Listen for monitor WS events
+  * UI-2933: Use capturing group to match WS events
+  * UI-2933: Listen for Wiretap-Start WS event
+  * UI-2933: Use correct property to determine monitorer](https://github.com/2600hz/monster-ui-callqueues/commit/f91c366ff80c4a8f46cf0ac362e8caf9e741ea20) by Joris Tirado
+ -- 2600Hz Offical <packages@2600hz.com>  Fri, 27 Oct 2017 18:57:39 +0000

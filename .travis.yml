@@ -1,0 +1,55 @@
+language: python
+python:
+- "3.6"
+services: docker
+env:
+  global:
+  - secure: "G0dGupw7piQv8pJoic4rJAlDZAAqgvLJjeo3it8tMLBw1sw7+zIUSKWTaqMuMX5pWgiaqI7/vsfjQ7eIvvbZ0l+CNtZNBe0ZJxyOf8lV9FjiF2TlLcZIlyXrM6mOCqcl8Z08aGoB2FEugxlmn8JmvxDRTKmsQJCUj4noSHQ9EJg9XQS+bpSZINFqkqPicIJXtVprevWw1d9VfvOo1lqvtMthyGnO6aYSt4BPkO3E+FJaIIVJdqvusIkkrjfqP5myG23ajfk2/z5zAoHzYM9p9iEW7q4rq5MibgBvhq4hvxQcb5XppXVTmFR13B0Us4LatkNAtxaT+Ae//JkMLoAeqGVQixltLnAmlGqWa16O+qdk7vX1omoNCntnLKlkepoYS7832OC6kSX6VZtsJWuC3H3RYfvJiUp42iXzGDXlg4U6Tzh+q3YF5ElTSqWv0T3yG+F2Anx14oWtOUdNrRUJ/RdWQG8NZdLBTMH/a6aNNZrp/tfp0PKNRJ9TmmsnrY2iTO+QGyOhVNi8uoR2uswGEAb6YV0ZLnc++lFvT+acO3fHZoz/HnFFF/hAwZPi6yBkPwJ5Ki8D5IzRbwIAAAExFDKFb2xxsl3BKWolS+gtgBw8tDHMJpocMQpotjvswyh21uXCtsJtSADBUcqenBc9VdCjPfa2lhqk38v1VkGEMNw="
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
+  slack:
+    rooms:
+    - secure: "MWt6AtaKzjw5GWfjBig+rsTHDKrZ67uNz3zzSC5dmOcuo9OGIdB+ukiD9LJExDVqtPRytj06YqoYZ5J4QcnNQTA5jxxFTxjGLWU7pObFh+v/iW6WRatrEBikqIgoDYcI7IKn1KmualrzqWxpgWYQFhcW7uSNUy+RoO+KEBt1aBP4/Mv+6sMYJpREYBW6iPKR+XtU7NpyIehntR2wycFhgxhFXbighih6GMJLenNz/DlaT8pdzMncFOqBq5m3Xp521Etg5AsNjYpCfxHJ4XdDoPszu2sPz3kn6w8L6wcRhX67tm8c6DIh9bGkmYXFQZqpeK5NBxs1hygTM3bvYe9J7ue2C70iHoJ6ivCEvhFszRD4oKSCRv6oiNd+n0++G/DBO9tB1K6PxTqytKM3oBxd5uWDG7rzqC1Z0eu1g51Mpp4460cnwrsoLCjCf5U2E7V3Zw3olOUVAthXxxDLNVdhXHUP3qN9wfc/J0RGW8cC9ogDPHpPnddtI3MCYOprVGanaM7O3+8YAoi3zSOyNYCxZtj15SfdjEc2bD8vI+vlUpalYxqCjP0vhi+lVLIPcGPInowNVTA/XEl7nuj3g66BMWEiyt3C/Bksxrn837MJVyhNmzO6OEFm7SUIAQ1g++ebEiL6rljVfdAAdOGiXaPd3LDbQndUNnckZmDexy3t26c="
+    on_success: always
+    on_failure: always
+
+before_install: pip install --upgrade docker-compose requests invoke pyyaml tmpld
+
+install:
+- inv dc.build
+- inv dc.up
+
+script: true
+# inv test
+
+after_success:
+- inv ci.tag-build
+- inv hub.push
+- inv hub.update-readme
+
+before_deploy: inv tmpl.render
+
+deploy:
+- provider: bintray
+  file: descriptor.json
+  user: joeblackwaslike
+  key:
+    secure: "g6pcRg9p9PMjR4Ck7sAbP+7Bm3bB3O6+Py0vGx+W/KlUH8PIpSfVJK0ZmP8LDKcm+wS7QZpq7m81tki1n1buKytix85CeKxBc3CN1PtBznk73ZzGyg4ZSsayX1kgAaD44lclndVngQapjDZzczE9YIM7BMtLPPiagn1THb+gDpQDUBX2MVfi1S1xJ0gsB4pxlxXvTzF6+L/REWa/tjq2t3C8HltS2EI5Sp1tqL5R+gjAGT/RYnsvyPrqh3hpQB04dAUoaVg5x1oR2lA+SArPkTpKAy+w8kkXrfm12U4odr70OXjx0asKQsap3qo8Sl+NjXRZC/VU8TZbaU+9wFYYdmJTEqyU4NR7JP0FRfdQsC6Jhvwm1m3AD1Kp38MRsjVsVdWgY/Yznyt/DI8C8MomTr7ibnbvW5XhpCJ/WdWPk1QAEsR36ULUOdG9d/lEtVglr+UkGbrE3YyO+L3hoMF3xKFOUPzOaTVAGrcMAzhIB/FwYivI5Y3XY4T+u5BdFq5LHmb3kwHXzinYHg34k0gdFTjCuu/ZpccydF8r/84fES0Ld4qmquZst5lHACqAac6E5+hlm5AGOSLuNeDSqrry9sCqqD93TtLkyaaefCixnCHMmCk9Wpeen+1wLsSR+yOqJ9uFyKlpp/RGpnOqRmv3uSBt5gjPy+ngor5RQENNqKQ="
+  passphrase:
+    secure: "JjdRgcECSqWbUqSwxjIhQmn3TwBtr8QrKqYGBxK8VzRcpvpI5jmRQCNSZzgZ0J/DpI7dL6h79f0xNIHjmB4F7PK0WqYP6MRbV7YV6T1YCEUQWxXzqb5ueTI9FBINQbGgESTPESPupCPMuMvhvLhuodyUL/ppvK51oNsoIn8+b6I04dV0UxVjQPm6OKnsyScRRlb8JQC2s313+rlVYKS501BZT0VACZZJBDEvb4PTWOlTajkP1kEhstXln75RzRDlwDLRu6It1qjV0NuRPZvn+y1d8M23BEfIJ4hmJFfWOPI4zLqEGKuLGrVqvGL7EoHtie4LkONdtyWuv8VLQuxTRCqR8rjYgDHcF9y4lMhY3weRkKx3nnI8w+Vdl3X9MxDGdej1UxS8ReE3MGEq4nKYcA5P/PaJrBCQBlCEOZP4Yp47NpC96K/ofmj/cr4/penZdEneei/6LBnQDXVaKk05L+s1PKg2FdkFxHTILJE2XFKHVQMd5hAQqtehInagioIXwbi+iFkOV7MbZDEaSIS3sLG8QeuwyHdZq7K4VHtQD3D/xD3FaVruAc0atl61tLnK7jigIZFpS9hnzdQcgVDh6zjzUdoVVlIb3YHW0Gdy/1AZnymsqz853JMmTevltPXVFCkaO4dekYMsV8Zk3lA3IwSFCj5mUhzJCHowBluiRiw="
+  skip_cleanup: true
+  on:
+    repo: telephoneorg/monster-ui-builder
+    tags: true
+- provider: releases
+  api_key:
+    secure: hVL+O9xKNfu/XEZPrr2I+5NV8EeYlPX92Z1nuXYuSJS7qARfJbZbtRRo4LpPzCs2CEvdSMJoTpvVhFx2ZTO2tyJ5+ipDYdBRggQmNqSYTjPulElF2fMHErd9Q3YgByNU7BbsmZhqT7fE0DiEtVjx7a9Z09S//8ZoCnjRE+/XTrky97H7cXEl/60duPK6Hn/dJvtr2YmBvtymo8TJO7tHJSEii0kIDYzPXRAZ8ZMXtVCrkiwFcACx5KUOMT8LQJp+Z1wMeyxR0XUFLeQGhkGxxZL7iHsumPjJj7XpONwpfnkQHd84047CDE5CjgN/6KyozpnbmMY6iEiCVJc+78/a1G+7gsGUrAgIH+k+/7VFEPO27MejWL0B0etGZpvKWqcvXE77VwL3TuX+ls6gihUMAR4e7u4q5VR2u9ggczgyujJX9ZZU0LQSAAdj/8lQJ7eEHzsJ6+kXafUCA2U4PHQhivpzKHw//WJQ8uvIgOutCJKVyxQlXRNZZ392w0V+5VPkklYHN7EJS+A4GVYR82ziWrVu3EdSut5QL5wB17lCLCAupJPCEkzNW4FcAyQmTRAjAfCx4h3Efi3GlxtDKO6xnzvRUniVSyCJTJlOOR0VQBsMk+FrW85IqymBW8SqRjV9LU6NAISLlwa63IWm5fd3Ow7MWIh7SQeaQShpboTyssE=
+  file_glob: true
+  file: dist/*
+  skip_cleanup: true
+  on:
+    repo: telephoneorg/monster-ui-builder
+    tags: true

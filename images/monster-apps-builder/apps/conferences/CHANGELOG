@@ -1,0 +1,27 @@
+Release Summary for 4.2.0
+  Difference between master and 4.1
+  * Summary
+      - As a call center basic user, I would like the ability to set a shout stream as my hold music.
+  * Commits
+      - [UI-2893: update conference code with new mediaSelect common control](https://github.com/2600hz/monster-ui-conferences/commit/72024d4ff6d6e51153f28c44d14939cf0d69050d) by Jean-Roch Maitre
+  * Summary
+      - As a FEE, I want to use lodash instead of underscorejs so that I have access to more utilities
+  * Commits
+      - [UI-2866: Migrate from underscore to lodash (#5)
+  * UI-2866: Reference lodash intead of underscore following migration
+  * UI-2866: Migrate underscore specific utils to lodash](https://github.com/2600hz/monster-ui-conferences/commit/bdd4e7306acaac8b6573b059ff0942b4f7086ff9) by Joris Tirado
+  * Summary
+      - As a FEE, I want ESLint errors/warnings to be fixed for the Conference Manager so that the codebase is consistent
+  * Commits
+      - [UI-2831: Fix ESLint erros/warnings (#4)](https://github.com/2600hz/monster-ui-conferences/commit/40457687aa6f5e913d1d203fa7195c473bf2702d) by Joris Tirado
+  * Summary
+      - As an engineer, I want to add the new numberWrapper control in new places, so the UI is more consistent
+  * Commits
+      - [UI-2726: adding number formatter to conf manager](https://github.com/2600hz/monster-ui-conferences/commit/902aecbe97b7cb80cb99a2327d9c85b310677151) by Jean-Roch Maitre
+  * Summary
+      - As a FEE, I want spaced tables so that I can match mockups
+  * Commits
+      - [UI-2686: Use new monster table markup for conferences (#3)](https://github.com/2600hz/monster-ui-conferences/commit/1981b96d6d5638358051cb375fad9322b5b5e0cb) by Joris Tirado
+  * [Merge branch &#039;master&#039; of https://github.com/2600hz/monster-ui-conferences](https://github.com/2600hz/monster-ui-conferences/commit/2b67e720a5a17e96f03690d727bbf91cd12e124a) by JR Maitre
+  * [OOB: Updating description and adding screenshots of conferences app](https://github.com/2600hz/monster-ui-conferences/commit/2ca0bd44696c36d14298c12f69a751f089553f28) by JR Maitre
+ -- 2600Hz Offical <packages@2600hz.com>  Wed, 27 Sep 2017 22:21:16 +0000

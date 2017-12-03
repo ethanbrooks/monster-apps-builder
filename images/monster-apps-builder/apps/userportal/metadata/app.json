@@ -1,0 +1,39 @@
+{
+	"name": "userportal",
+	"i18n": {
+		"en-US": {
+			"label": "User Portal",
+			"description": "The User Portal app gives users all of their personalized communications information in one place. View corporate contacts, manage voicemails and faxes, see devices registered, and more. All without exposing end-users to complexities of the entire platform. Users can ensure their devices are online and registered. They can view and listen to voicemails. They can see who has sent them a fax and download the fax online, or delete it from their fax mailbox. In addition, users who have changing needs can modify incoming call handling settings such as call forwarding or simultaneous ringing across devices.",
+			"extended_description": "",
+			"features": [
+				"Voicemail box",
+				"Voicemail to email",
+				"Call forwarding",
+				"User call history",
+				"Company directory",
+				"Conference bridges",
+				"Contact list",
+				"Device status and configuration"
+			]
+		}
+	},
+	"tags": [
+		"developer"
+	],
+	"icon": "Userportal_app.png",
+	"api_url": "http://10.26.0.41:8000/v2",
+	"author": "2600Hz",
+	"version": "1.0",
+	"license": "-",
+	"masqueradable": false,
+	"price": 0,
+	"screenshots": [
+		"userportal_1.png",
+		"userportal_2.png"
+	],
+	"urls": {
+		"documentation": "{documentation_url}",
+		"howto": "{howto_video_url}"
+	},
+	"pvt_type": "app"
+}

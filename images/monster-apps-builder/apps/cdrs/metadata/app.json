@@ -1,0 +1,33 @@
+{
+	"name": "cdrs",
+	"i18n": {
+		"en-US": {
+			"label": "CDRs",
+			"description": "This app lets you see CDRs for an account or a user, as well as see some statistics about the calls.",
+			"extended_description": "",
+			"features": [
+				"List of all CDRs on the account",
+				"List of any user CDRs",
+				"Statistics about CDRs"
+			]
+		}
+	},
+	"tags": [
+		"developer"
+	],
+	"icon": "",
+	"api_url": "http://10.26.0.41:8000/v2",
+	"author": "2600Hz",
+	"version": "1.0",
+	"license": "-", 
+	"price": 0,
+	"screenshots": [
+		"charts.PNG",
+		"logs.PNG"
+	],
+	"urls": {
+		"documentation": "{documentation_url}",
+		"howto": "{howto_video_url}"
+	},
+	"pvt_type": "app"
+}

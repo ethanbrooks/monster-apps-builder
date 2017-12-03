@@ -1,0 +1,222 @@
+{
+	"servicePlanner": {
+		"tables": {
+			"all": "All",
+			"noMargin": "N/A",
+			"activationCharge": "Activation Charge",
+			"minimum": "Minimum Qty",
+			"cascadeTooltip": "Pricing and Discount Tiers are based on the total number of items across all sub-accounts"
+		},
+		"listing": {
+			"title": "Service Plans",
+			"tip": "Reminder: You can layer multiple service plans on an account.",
+			"actions": {
+				"copy": "Copy",
+				"delete": "Delete",
+				"edit": "Edit"
+			},
+			"newPlan": "Add New Plan",
+			"confirmDelete": "Are you sure you want to delete the \"{{name}}\" Service Plan?",
+			"deleteSuccess": "You successfully deleted the \"{{name}}\" Service Plan!",
+			"empty": "There are no Service Plans in this account. Click on the \"Add New Plan\" button to create a new one!"
+		},
+		"addPlan": {
+			"title": "Pick a Service Plan Type",
+			"emptyChoice": {
+				"title": "Blank Template",
+				"description": "Create a Service Plan completely from scratch."
+			},
+			"competitiveChoice": {
+				"title": "Build a Competitive Plan",
+				"description": "Get started quickly by charging for items the same way other competitors do. Input device, user, number, and trunk rates and set usage mark-up percentages.<br/><br/>We'll handle the rest."
+			},
+			"currentChoice": {
+				"title": "Build a Plan on My Cost",
+				"description": "Show me what I'm being charged for and allow me to mark up prices for those items."
+			}
+		},
+		"competitivePlan": {
+			"title": "Build a Competitive Plan",
+			"back": "Cancel",
+			"next": "Review",
+			"help": "Fill out the following fields with how much you'd like to charge per field and we'll import those values into a standard service plan on the next page for your review.",
+			"keys": {
+				"devices": "Per Device",
+				"users": "Per User",
+				"phoneNumbers": "Per Number",
+				"limits": "Per Trunk",
+				"perMinuteVoip": "Per Minute Markup"
+			}
+		},
+		"editPlan": {
+			"title": "Service Plan Editor",
+			"subTitle": "Add and Configure elements of your Service Plan, then Save to update.",
+			"name": "Name",
+			"category": "Category",
+			"cancel": "Go Back To Listing",
+			"save": "Save Service Plan",
+			"newCategory": "- Add a New Category -",
+			"newCategoryLabel": "Type the new Category Name",
+			"notApplicable": "N/A",
+			"emptyCategory": "There are no items in this category for this Service Plan",
+			"columns": {
+				"key": "Key",
+				"quantity": "Quantity",
+				"yourRate": "Your Rate",
+				"customerRate": "Customer Rate",
+				"margin": "Margin",
+				"other": "Other Options",
+				"actions": "Actions",
+				"manualRecurring": "Name",
+				"usage": "Name",
+				"markup": "Markup"
+			},
+			"actions": {
+				"delete": "Delete",
+				"edit": "Edit",
+				"addUsageItem": "Add Usage Based Item",
+				"addPlanItem": "Add Service Item",
+				"addManualRecurringItem": "Add Manual Recurring Item"
+			},
+			"unusedItems": {
+				"title": "Things you're not charging your customers for...",
+				"addFeeTooltip": "Add Fee",
+				"emptyPlan": "You don't have any active service plan in this account.",
+				"columns": {
+					"addFee": "Add Fee?",
+					"rate": "Your Rate",
+					"activationCharge": "Your Activation Charge",
+					"name": "Name"
+				}
+			},
+			"titleSections": {
+				"manual_recurring": "Manual Recurring Items",
+				"plan": "Service Plan Items",
+				"usage": "Usage Based Items"
+			},
+			"editField": {
+				"manualRecurring": {
+					"title": "Manual Recurring Item",
+					"name": "Item Name",
+					"rate": "Customer Rate ($)",
+					"quantity": "Quantity",
+					"save": "Save Manual Recurring Field",
+					"cancel": "Cancel"
+				},
+				"usage": {
+					"choicesTitle": "Add Usage Based Item",
+					"choicesSubtitle": "Choose a Usage Based Item from the list below",
+					"noChoices": "There are no Usage Based Items available",
+					"noChoicesSubtitle": "It's possible that you're already charging for all the existing Usage Based Items in the current Service Plan.",
+					"title": "Usage Based Item",
+					"name": "Item Name",
+					"markupType": "Markup Type",
+					"markupPercent": "Markup (%)",
+					"markupFixed": "Markup ($)",
+					"save": "Save Usage Based Item",
+					"cancel": "Cancel",
+					"next": "Next",
+					"markupTypes": {
+						"percentage": "Percentage",
+						"fixed_price": "Fixed Price"
+					},
+					"itemNotFound": "The selected Usage Based Item is no longer configurable for this account."
+				},
+				"plan": {
+					"choicesTitle": "Add Service Item",
+					"choicesSubtitle": "I want to add a Service Plan Item for:",
+					"noChoices": "There are no Service Items available",
+					"noChoicesSubtitle": "It's possible that you're already charging for all the existing Service Items in the current Service Plan.",
+					"title": "{{variable}}",
+					"name": "Item Name",
+					"save": "Save Service Item",
+					"cancel": "Cancel",
+					"next": "Next",
+					"itemNotFound": "The selected Service Item is no longer configurable for this account.",
+					"minimum": {
+						"label": "Monthly Minimum",
+						"subLabel": "Min. Quantity"
+					},
+					"activationCharge": {
+						"label": "Apply Activation Fee"
+					},
+					"exceptions": {
+						"label": "Exclude"
+					},
+					"chargeAs": {
+						"label": "Charge As",
+						"selectChoice": "-- Select an option --"
+					},
+					"cascade": {
+						"label": "Aggregate counts across all sub-accounts",
+						"tooltip": "This powerful feature lets you decide whether to calculate pricing discounts based on the total number of items for all sub-accounts combined, or whether you want to treat each sub-account individually. <br/><br/> As an example, assume two sub-accounts have 5 devices each. When this option is checked, the system will calculate pricing based on the total of 10 devices, and any discounts for having 10 devices would be applied. When unchecked, the system will calculate pricing based on each account having 5 devices, and will then add the pricing together after calculating based on 5 devices.",
+						"help1": "Indicated by the following icon: ",
+						"help2": "When checked, pricing and discount tiers are based on the total number of items across all sub-accounts.",
+						"help3": "When unchecked, pricing is based on totals for each individual sub-account, and their total costs are then added together"
+					}
+				}
+			},
+			"saveSuccess": "You successfully saved the service plan named \"{{name}}\"!"
+		},
+		"keys": {
+			"phone_numbers": "Phone Numbers",
+			"number_services": "Number Services",
+			"limits": "Limits",
+			"devices": "Devices",
+			"users": "Users",
+			"branding": "Branding",
+			"ips": "IPs",
+			"ui_apps": "UI Apps",
+			"port": "Port Request",
+			"cnam": "CNAM Update",
+			"e911": "e911",
+			"ata": "ATA",
+			"cellphone": "Cell Phone",
+			"fax": "Fax",
+			"landline": "Landline",
+			"mobile": "Mobile",
+			"sip_device": "SIP Device",
+			"sip_uri": "SIP URI",
+			"smartphone": "Smartphone",
+			"softphone": "Softphone",
+			"outbound_trunks": "Outbound Trunks",
+			"inbound_trunks": "Inbound Trunks",
+			"twoway_trunks": "Twoway Trunks",
+			"did_us": "US DID",
+			"tollfree_us": "US Tollfree",
+			"rate": "Rate",
+			"activation_charge": "Activation charge",
+			"minimum": "Minimum",
+			"exceptions": "Exceptions",
+			"_all": "All",
+			"as": "As",
+			"user": "Standard User",
+			"admin": "Account Admin",
+			"accounts": "Accounts Manager",
+			"branding": "Branding",
+			"callflows": "Advanced Callflows",
+			"carriers": "Carriers",
+			"cluster": "Cluster Manager",
+			"debug": "Debug App",
+			"migration": "Migration",
+			"mobile": "Mobile",
+			"numbers": "Numbers Manager",
+			"pbxs": "PBX Connector",
+			"pivot": "Pivot",
+			"port": "Port Manager",
+			"provisioner": "Provisioner",
+			"reporting": "Reseller Reporting",
+			"userportal": "Userportal",
+			"voip": "Smart PBX",
+			"webhooks": "Webhooks",
+			"discounts": "Discounts",
+			"maximum": "Maximum",
+			"per-minute-voip": "Per Minute VoIP",
+			"mobile_data": "Mobile Data (100mB)",
+			"support": "Support",
+			"markup_percentage": "Markup",
+			"markup_fixed_price": "Markup",
+			"markup_rate": "Rate"
+		}
+	}
+}

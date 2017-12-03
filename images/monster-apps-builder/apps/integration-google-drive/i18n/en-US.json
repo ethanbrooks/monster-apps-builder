@@ -1,0 +1,45 @@
+{
+	"integrationGoogleDrive": {
+		"description": "Set up and Manage Your Google Drive accounts as a Storage Platform for Media.",
+		"title": "Integration",
+		"table": {
+			"title": "Google Drive Accounts on This Account",
+			"accountName": "Name",
+			"actions": "Actions",
+			"deleteTooltip": "Delete",
+			"editTooltip": "Edit Configuration",
+			"newAccount": "New Account"
+		},
+		"confirmDelete": "Are you sure you want to delete \"{{accountName}}\" from the system?",
+		"successDelete": "You successfully deleted \"{{accountName}}\" from the system.",
+		"edition": {
+			"title": "Creating New Google Drive Account",
+			"subTitle": "Google Drive Configuration Options",
+			"details": "Details",
+			"options": "Options",
+			"name": {
+				"label": "Name",
+				"help": ""
+			},
+			"oAuthDoc": {
+				"label": "Google Account",
+				"help": ""
+			},
+			"folder": {
+				"label": "Base Folder",
+				"help": ""
+			},
+			"successUpdate": "You successfully saved changes to the \"{{variable}}\" configuration!",
+			"helpBeforeLink": "Information about Google Drive and how to fill these fields is available in the Google Drive documentation",
+			"googleUser": {
+				"none": "No Account Linked",
+				"unknown": "*******@gmail.com",
+				"useAnotherAccount": "Use Another Account",
+				"reset": "Reset Field",
+				"sync": "Link with My Google Account",
+				"noProviders": "No Google Provider Configured"
+			}
+		},
+		"noAccount": "It looks like you haven't configured any Google Drive account yet, click here to start configuring your first one!"
+	}
+}

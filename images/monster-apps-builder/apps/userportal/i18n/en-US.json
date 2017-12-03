@@ -1,0 +1,157 @@
+{
+	"userportal": {
+		"menuTitles": {
+			"voicemails": "Voicemails",
+			"callHistory": "Call History",
+			"settings": "Settings & Devices",
+			"contactList": "Contact List",
+			"conference": "Conference",
+			"faxes": "Faxes"
+		},
+
+		"callHistory": {
+			"date": "Date",
+			"from_caller_id": "From (Caller ID)",
+			"to_dialed_number": "To (Dialed number)",
+			"duration": "Duration"
+		},
+
+		"voicemails": {
+			"table": {
+				"columns": {
+					"status": "Status",
+					"callId": "Call ID",
+					"received": "Received",
+					"from": "From",
+					"targetNumber": "Target Number",
+					"duration": "Duration",
+					"name": "Name",
+					"vmboxName": "Voicemail Box"
+				},
+				"emptyRow": "There are no messages stored in the selected Voicemail Box"
+			},
+			"actionBar": {
+				"select": {
+					"all": "All on page",
+					"new": "New",
+					"listened": "Listened",
+					"deleted": "Deleted",
+					"none": "None"
+				},
+				"markAsNew": "Mark as New",
+				"markAsListened": "Mark as Listened",
+				"markAsDeleted": "Mark as Deleted",
+				"tooltips": {
+					"markAs": "Mark As",
+					"select": "Select"
+				}
+			},
+			"status": {
+				"saved": "Listened",
+				"deleted": "Deleted",
+				"new": "New"
+			},
+			"tooltips": {
+				"play": "Play Voicemail",
+				"download": "Download Voicemail"
+			},
+			"actionBar": {
+				"select": {
+					"all": "All on page",
+					"new": "New",
+					"listened": "Listened",
+					"deleted": "Deleted",
+					"none": "None"
+				},
+				"selectVM": {
+					"none": "Select a Voicemail Box"
+				},
+				"from": "From",
+				"to": "To",
+				"markAsNew": "Mark as New",
+				"markAsListened": "Mark as Listened",
+				"markAsDeleted": "Mark as Deleted",
+				"tooltips": {
+					"markAs": "Mark As",
+					"refresh": "Refresh",
+					"select": "Select",
+					"moveTo": "Move To"
+				}
+			}
+		},
+
+		"contactList": {
+			"call": "Call",
+			"quickCallTitle": "Quickcall Device",
+			"name": "Name",
+			"internalNumber": "Internal Number",
+			"externalNumber": "External Number",
+			"you_need_to_select_a_registered_device": "You need to select a registered device from the dropdown in order to use the QuickCall Feature!",
+			"quickcall_device": "Quickcall Device: ",
+			"call": "Call",
+			"in_order_to_use_the_quickcall_feature": "In order to use the Quickcall feature, you can either enter a number in the Textbox below, or select directly a number from your Contact List.",
+			"the_quickcall_feature_will_ring_your_selected_device": "The QuickCall feature will ring your selected device, and will then try to reach the number you selected once you picked up the call.",
+			"noRegisteredDevices": "You have no devices registered to the system, so the quickcall feature isn't enabled."
+		},
+
+		"settings": {
+			"title": "My Settings",
+			"devicesTitle": "My Devices",
+			"forward_calls_to": "Forward Calls To",
+			"also_ring_my_voip_phone": "Also Ring My VoIP Phone",
+			"send_voicemail_to_email": "Send Voicemail to Email",
+			"email_address": "Email Address",
+			"keep_caller_id": "Keep Caller ID",
+			"enable_call_forward": "Enable Call Forward",
+
+			"table": {
+				"columns": {
+					"name": "Name",
+					"type": "Device Type",
+					"registered": "Registered",
+					"mac": "MAC Address"
+				}
+			},
+			"types": {
+				"sip_device": "SIP Device",
+				"softphone": "Softphone",
+				"cellphone": "Cell Phone",
+				"smartphone": "Smartphone",
+				"mobile": "Mobile",
+				"ata": "ATA",
+				"fax": "Fax Machine",
+				"sip_uri": "SIP URI"
+			}
+		},
+
+		"conference": {
+			"settings": {
+				"title": "Settings",
+				"moderatorPIN": "Moderator PIN",
+				"participantPIN": "Participant PIN",
+				"joinDeaf": "Participants join the conference deaf",
+				"joinMuted": "Participants join the conference muted",
+				"playEntryTone": "Play entry tone",
+				"playExitTone": "Play exit tone",
+				"callInNumber": "Call-in Number",
+				"conferenceNumber": "Conference Number",
+				"validation": {
+					"numberString": "Please only enter numeric characters and commas"
+				},
+				"successUpdate": "You successfully saved changes to the \"{{variable}}\" conference!"
+			}
+		},
+
+		"faxes": {
+			"date": "Date",
+			"from": "From ",
+			"to": "To",
+			"direction": "Direction",
+			"faxbox": "Faxbox",
+			"noFaxbox": "This user doesn't have any faxbox attached, so you won't have any faxes listed in this module",
+			"inbound": "Inbound",
+			"outbound": "Outbound",
+			"download": "Download"
+		}
+	}
+}

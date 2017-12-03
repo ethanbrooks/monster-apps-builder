@@ -1,0 +1,29 @@
+{
+	"name": "migration",
+	"source_url": "http://webdev/monster-modules/migration",
+	"i18n": {
+		"en-US": {
+			"label": "Migration App",
+			"description": "Migration App is used to move accounts from the old KAZOO Call Flow Editor to Monster’s SmartPBX so they can be used and managed in SmartPBX.",
+			"extended_description": "",
+			"features": [
+				"Migrate old Kazoo UI User Callflows"
+			]
+		}
+	},
+	"tags": [],
+	"icon": "Migration_app.png",
+	"api_url": "http://10.26.0.41:8000/v2",
+	"author": "2600Hz",
+	"version": "1.0",
+	"license": "-",
+	"price": 0,
+	"screenshots": [
+		"Intro.png"
+	],
+	"urls": {
+		"documentation": "",
+		"howto": ""
+	},
+	"pvt_type": "app"
+}

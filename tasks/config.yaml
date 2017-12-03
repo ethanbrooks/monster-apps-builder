@@ -1,0 +1,12 @@
+project: monster-apps
+repo: monster-apps-builder
+hub:
+  images:
+  - monster-apps-builder
+ci:
+  package:
+    name: monster-apps
+tmpl:
+  glob: templates/*.j2
+  values:
+  - config.yaml

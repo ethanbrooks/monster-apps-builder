@@ -1,0 +1,31 @@
+{
+	"name": "dialplans",
+	"i18n": {
+		"en-US": {
+			"label": "Dialplan Manager",
+			"description": "Dialplan Manager enables you to support phone calls happening anywhere in the world, while also providing the best experience. Users who are used to dialing phone numbers in a way that only works in their specific country can now continue to dial numbers in that way. For  example: your customer based in France does not use any prefixes and only places calls to local phone numbers. Typically, to use KAZOO the customer would have to get used to typing prefixes in order to place calls. However, with Dialplan Manager, in less than 2 minutes, you can configure a new rule that will take care of this. The Dialplan Manager offers a fine level of detail that will let you customize these settings, even for a specific device.",
+			"extended_description": "",
+			"features": [
+				"Customizable number rules by account or user basis",
+				"Test your number formatting rules"
+			]
+		}
+	},
+	"tags": [
+		"reseller"
+	],
+	"icon": "Dialplans_app.png",
+	"api_url": "http://10.26.0.41:8000/v2",
+	"author": "2600Hz",
+	"version": "1.0",
+	"license": "-", 
+	"price": 0,
+	"screenshots": [
+		"creation.png"
+	],
+	"urls": {
+		"documentation": "{documentation_url}",
+		"howto": "{howto_video_url}"
+	},
+	"pvt_type": "app"
+}

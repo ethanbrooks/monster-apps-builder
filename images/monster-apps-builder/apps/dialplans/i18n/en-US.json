@@ -1,0 +1,32 @@
+{
+	"dialplans": {
+		"title": "Dialplan Editor",
+		"menuTitles": {
+			"account": "Account",
+			"user": "User",
+			"device": "Device"
+		},
+		"entities": {
+			"none": "Please select a valid option:"
+		},
+		"system": {
+			"title": "System Rules",
+			"noRules": "There are no system rules configured"
+		},
+		"custom": {
+			"title": "Custom Rules",
+			"prefix": "Prefix",
+			"suffix": "Suffix",
+			"regex": "Regex",
+			"description": "Description",
+			"testing": {
+				"success": "Yes!",
+				"failure": "Nope...",
+				"testPlaceholder": "Type a test number...",
+				"title": "Does this number fall into this category?",
+				"formattedNumber": "Number after formatting:"
+			}
+		},
+		"successUpdate": "You successfully updated the dialplan settings!"
+	}
+}

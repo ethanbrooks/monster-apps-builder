@@ -1,0 +1,37 @@
+{
+	"name": "cluster",
+	"i18n": {
+		"en-US": {
+			"label": "Cluster Manager",
+			"description": "The Cluster Manager app enables you to deploy, monitor and manager servers across all of your data centers. Service providers who manage their own clusters know what a difficult endeavor this can be, but with the innovative Cluster Manager app setting up and managing a KAZOO installation has never been easier. Management and maintenance can be handled through the powerful task orchestration tool that handles changes and upgrades safely and correctly, every time",
+			"extended_description": "",
+			"features": [
+				"Server dashboard ",
+				"Add/delete servers in real time",
+				"Real time metrics and historical data",
+				"Server alerts",
+				"Run commands across servers, zones and clusters",
+				"Monitor task progress",
+				"Run customized scripts"
+			]
+		}
+	},
+	"tags": [
+		"carrier"
+	],
+	"icon": "ClusterManager_app.png",
+	"api_url": "http://10.26.0.41:8000/v2",
+	"author": "2600Hz",
+	"version": "1.0",
+	"license": "-",
+	"price": 0,
+	"screenshots": [
+		"clustermanager1.png",
+		"clustermanager2.png"
+	],
+	"urls": {
+		"documentation": "{documentation_url}",
+		"howto": "{howto_video_url}"
+	},
+	"pvt_type": "app"
+}

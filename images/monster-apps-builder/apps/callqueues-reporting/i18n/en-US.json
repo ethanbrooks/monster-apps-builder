@@ -1,0 +1,35 @@
+{
+	"callQueuesReportingApp": {
+		"chart": {
+			"noData": "No data to display"
+		},
+		"misc": {
+			"entities": {
+				"queues": {
+					"label": "Queues"
+				},
+				"recipients": {
+					"label": "Agents"
+				}
+			},
+			"metrics": {
+				"abandon_count": "Abandon Count",
+				"avg_wait": "Average Wait",
+				"call_count": "Call Count",
+				"timeout_count": "Timeout Count"
+			},
+			"periods": {
+				"daily": "Daily",
+				"weekly": "Weekly",
+				"monthly": "Monthly"
+			}
+		},
+		"dashboard": {
+			"labels": {
+				"period": "Period",
+				"startDate": "Start Date",
+				"endDate": "End Date"
+			}
+		}
+	}
+}

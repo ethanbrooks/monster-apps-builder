@@ -1,0 +1,49 @@
+{
+	"integrationAWS": {
+		"description": "Set up and Manage Your AWS accounts as a Storage Platform for Media.",
+		"title": "Integration",
+		"table": {
+			"title": "AWS Accounts on This Account",
+			"accountName": "Name",
+			"actions": "Actions",
+			"deleteTooltip": "Delete",
+			"editTooltip": "Edit Configuration",
+			"newAccount": "New Account"
+		},
+		"confirmDelete": "Are you sure you want to delete \"{{accountName}}\" from the system?",
+		"successDelete": "You successfully deleted \"{{accountName}}\" from the system.",
+		"edition": {
+			"title": "Creating New AWS Account",
+			"subTitle": "AWS Configuration Options",
+			"details": "Details",
+			"options": "Options",
+			"name": {
+				"label": "Name",
+				"help": ""
+			},
+			"accessKeyId": {
+				"label": "Access Key ID",
+				"help": ""
+			},
+			"secretKey": {
+				"label": "Secret Access Key",
+				"help": ""
+			},
+			"bucket": {
+				"label": "Bucket",
+				"help": ""
+			},
+			"host": {
+				"label": "Host",
+				"help": ""
+			},
+			"path": {
+				"label": "Path",
+				"help": ""
+			},
+			"successUpdate": "You successfully saved changes to the \"{{variable}}\" configuration!",
+			"helpBeforeLink": "Information about Amazon S3 and how to fill these fields is available in the AWS documentation"
+		},
+		"noAccount": "It looks like you haven't configured any AWS account yet, click here to start configuring your first one!"
+	}
+}

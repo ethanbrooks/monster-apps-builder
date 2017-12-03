@@ -1,0 +1,21 @@
+Release Summary for 4.2.0
+  Difference between master and 4.1
+  * Summary
+      - As a FEE, I want to use lodash instead of underscorejs so that I have access to more utilities
+  * Commits
+      - [UI-2866: Reference lodash intead of underscore following migration (#6)](https://github.com/2600hz/monster-ui-provisioner/commit/2f7c54897f3d19dd7d7b2f7150bf1abb90596ddf) by Joris Tirado
+  * Summary
+      - When in master account, advanced provisioner only shows first 50 sub accounts.
+  * Commits
+      - [UI-2711: removed accounts from provisioner](https://github.com/2600hz/monster-ui-provisioner/commit/b289772da3ccc92e77345d1116c6cb04009d4e17) by Jean-Roch Maitre
+  * Summary
+      - As a FEE, I want the core-content id to use snake case so that all ids are in the format
+  * Commits
+      - [UI-2694: Normalize core content id name to snake case (#5)](https://github.com/2600hz/monster-ui-provisioner/commit/8d33d7dc2b6b5a6708f782164f34088eb2fbf13d) by Joris Tirado
+  * Summary
+      - Autocomplete shouldn&#039;t trigger in Adv. Provisioner
+  * Commits
+      - [UI-2690: Trick Chrome to disable autofill for password fields (#4)](https://github.com/2600hz/monster-ui-provisioner/commit/b242a59bdf3721c8f8c0e63b3df137958a6df395) by Joris Tirado
+  * [UI-2803: verify if provisioner_displayed_url field is set](https://github.com/2600hz/monster-ui-provisioner/commit/366a4b1160eaaffa9f7a4ec639de9759b26929d9) by Jean-Roch Maitre
+  * [OOB: Updating feature list of provisioner](https://github.com/2600hz/monster-ui-provisioner/commit/e235cd835413f1f9988254f8672a35f8fc5e0017) by JR Maitre
+ -- 2600Hz Offical <packages@2600hz.com>  Wed, 27 Sep 2017 22:08:51 +0000

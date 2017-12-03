@@ -1,0 +1,36 @@
+{
+	"name": "operator",
+	"i18n": {
+		"en-US": {
+			"label": "Operator Console",
+			"description": "Operator Console enables call managers and admins to manage inbound call traffic easily and efficiently. With the summary view, CEOs and other managerial roles are able to view the productivity of their workers. Users are able to view who is on the phone, how many calls are made, and the amount of time being spent on the phone.",
+			"extended_description": "",
+			"features": [
+				"Live call data such as active calls, timers and inbound/outbound calls",
+				"Office activity data such as who is busy/available and caller information",
+				"Concurrent call support",
+				"Parked calls view",
+				"Modern, intuitive user interface"
+			]
+		}
+	},
+	"tags": [
+		"reseller",
+		"carrier"
+	],
+	"icon": "Operator_app.png",
+	"api_url": "//10.26.0.21:8000/v2",
+	"author": "2600Hz",
+	"version": "1.0",
+	"license": "-",
+	"price": 0,
+	"screenshots": [
+		"Click2Call.png",
+		"Dashboard.png",
+		"ParkCall.png"
+	],
+	"urls": {
+		"documentation": "{documentation_url}",
+		"howto": "{howto_video_url}"
+	}
+}

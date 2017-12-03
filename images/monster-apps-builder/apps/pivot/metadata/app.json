@@ -1,0 +1,37 @@
+{
+	"name": "pivot",
+	"i18n": {
+		"en-US": {
+			"label": "Pivot",
+			"description": "Configure your Pivot Script easily by using this application",
+			"extended_description": "Pivot enables 3rd party developers to exert real time call control on KAZOO via REST API. This means your web or SaaS application can tell phone calls what to do, during the call! When a Pivot call flow is created, a developer provides a URI (address) that points to their web server. From then on, when KAZOO receives a phone call for a Pivot-enabled phone number, KAZOO sends an HTTP request to the 3rd party server asking it for call flow commands. KAZOO will then take the response and execute the appropriate commands for the call. With over 40+ APIs to choose from, you aren’t stuck rebuilding basic PBX functionality from scratch. 2600Hz adds a handy side app that helps you track your Pivot URLs and see payload information in real-time so you can troubleshoot your Pivot calls quickly and easily.",
+			"features": [
+				"Real time call control",
+				"Supports any RESTful language (PHP, Javascript, node.js)",
+				"Real time consumer prompts",
+				"Full range of PBX functionalities",
+				"Third party integrations",
+				"Text to speech",
+				"Play Media",
+				"Call recording"
+			]
+		}
+	},
+	"tags": [
+		"developer"
+	],
+	"icon": "Pivot_app.png",
+	"api_url": "http://10.26.0.41:8000/v2",
+	"author": "2600Hz",
+	"version": "1.0",
+	"license": "-",
+	"price": 0,
+	"screenshots": [
+		"Intro.png"
+	],
+	"urls": {
+		"documentation": "{documentation_url}",
+		"howto": "{howto_video_url}"
+	},
+	"pvt_type": "app"
+}

@@ -1,0 +1,560 @@
+{
+	"cluster": {
+		"title": "Cluster Manager",
+		"metrics": {
+			"server": "Server",
+			"service": "Service",
+			"metric": "Metric",
+			"from": "From",
+			"to": "To",
+			"title": "Metrics",
+			"render": "Render",
+			"filters": {
+				"service": "Service",
+				"server": "Server",
+				"metric": "Metric"
+			}
+		},
+		"alerts": {
+			"filters": {
+				"noResults": "There are no alerts for the current set of filters...",
+				"showAdvanced": "Advanced Filters",
+				"hideAdvanced": "Hide Advanced",
+				"severity": {
+					"select": "Select",
+					"all": "Active Alerts",
+					"critical": "Critical",
+					"warning": "Warning",
+					"silenced": "Silenced",
+					"stashed": "Stashed"
+				},
+				"clusters": {
+					"all": "All Clusters"
+				},
+				"zones": {
+					"all": "All Zones"
+				},
+				"servers": {
+					"all": "All Servers"
+				}
+			},
+			"title": "Alerts",
+			"columns": {
+				"severity": {
+					"title": "Severity"
+				},
+				"cluster": {
+					"title": "Cluster"
+				},
+				"zone": {
+					"title": "Zone"
+				},
+				"server": {
+					"title": "Server"
+				},
+				"check": {
+					"title": "Check"
+				},
+				"output": {
+					"title": "Output"
+				},
+				"occurences": {
+					"title": "Occurences"
+				},
+				"issued": {
+					"title": "Issued"
+				},
+				"reason": {
+					"title": "Reason"
+				},
+				"source": {
+					"title": "Source"
+				},
+				"timestamp": {
+					"title": "Date"
+				},
+				"expire": {
+					"title": "Expire"
+				}
+			},
+			"severity": {
+					"0": "OK",
+					"1": "WARNING",
+					"2": "CRITICAL",
+					"3": "UNKNOWN",
+					"99": "SILENCED"
+				},
+				"filterServerText": "Server: ",
+			"filterSeverityText": "Severity: ",
+			"removeFilter": "Remove Filter",
+			"silence": "Silence",
+			"wake": "Wake",
+			"resolve": "Resolve",
+			"successSilence": "You successfully silenced the selected checks!",
+			"successResolve": "You successfully resolved the selected alerts!",
+			"successWake": "You successfully woke the selected checks!",
+			"noCheckSelected": "You haven't selected any alerts.",
+			"noCheckSelectedHelp": "You can select the alerts to silence by checking the checkboxes on the rights of the Alerts table."
+		},
+		"monitor": "Monitor",
+		"amqp": "AMQP",
+		"sip": "SIP",
+		"media": "Media",
+		"apps": "Apps",
+		"db": "DB",
+		"carrier": "Carrier",
+		"network": "Network",
+		"security": "Security",
+		"capacity": "Capacity",
+		"cluster": "Cluster",
+		"addServer": "Add New Server",
+		"launchTask": "New Task",
+		"serverTable": {
+			"graph": "Graph",
+			"columns": {
+				"status": {
+					"title": "Status",
+					"lineman": {
+						"title": "Lineman",
+						"up": "Lineman is up",
+						"down": "Lineman is down",
+						"late": "Lineman is late for a keep alive"
+					},
+					"sensu": {
+						"title": "Sensu",
+						"up": "Sensu is up",
+						"down": "Sensu is down",
+						"late": "Sensu is late for a keep alive"
+					}
+				},
+				"name": {
+					"title": "Server & IP"
+				},
+				"cluster": {
+					"title": "Cluster"
+				},
+				"zone": {
+					"title": "Zone"
+				},
+				"alerts": {
+					"title": "Alerts"
+				},
+				"cpu": {
+					"title": "CPU"
+				},
+				"memory": {
+					"title": "Memory"
+				},
+				"disk": {
+					"title": "Disk"
+				},
+				"actions": {
+					"title": "Actions",
+					"deleteTooltip": "Delete",
+					"expandTooltip": "Expand Server Details",
+					"silenceTooltip": "Stash alerts on this server",
+					"unsilenceTooltip": "Unstash alerts on this server",
+					"serviceTooltip": "Show services"
+				}
+			},
+			"addZone": "Add New Zone",
+			"environments": {
+				"production": "Production",
+				"development": "Development"
+			}
+		},
+		"moreDetails": "Show Details Server",
+		"hideDetails": "Hide Details Server",
+		"detailServer": {
+			"title": "Details",
+			"misc": {
+				"name": "Miscellaneous",
+				"arch": "OS",
+				"memory": "Memory"
+			},
+			"cpu": {
+				"name": "CPU"
+			},
+			"interface": {
+				"name": "Interface"
+			},
+			"disks": {
+				"name": "Disk"
+			},
+			"services": {
+				"title": "Services",
+				"repo": "Repo",
+				"package": "Package",
+				"version": "Version",
+				"name": "Name",
+				"seeMore": "More Info",
+				"enabled": "Enabled",
+				"on": "On",
+				"off": "Off",
+				"status": "Status",
+				"actions": "Actions",
+				"restart": "Restart",
+				"stop": "Stop",
+				"__comment": "UI-2665: adding statuses colors to services",
+				"__version": "4.1",
+				"statuses": {
+					"up": "up",
+					"unmonitored": "unmonitored",
+					"unknown": "unknown",
+					"late": "late",
+					"degraded": "degraded",
+					"down": "down",
+					"passive": "passive"
+				}
+			},
+			"confirmAction": {
+				"Restart": "Are you sure you want to restart {{service}} for {{hostname}} ?.",
+				"Stop": "Are you sure you want to stop {{service}} for {{hostname}} ?."
+			}
+		},
+		"appsDetailsPopup": {
+			"title": "Apps Configured / Running",
+			"runningApps":"Apps Running",
+			"configuredApps": "Apps Configured",
+			"error": "Can not render the list of apps running as the information is missing from the database."
+		},
+		"servers": {
+			"empty": {
+				"headline": "In order to add servers, you must first create a cluster.",
+				"subtitle": "Go ahead and add a cluster to your system",
+				"button": "Add Cluster"
+			},
+			"title": "Servers",
+			"addDialog": {
+				"title": "Add Server",
+				"createButton": "Create Server",
+				"hostname": {
+					"label": "Hostname",
+					"placeholder": "hostname"
+				},
+				"cluster": {
+					"label": "Cluster",
+					"placeholder": "newClusterName"
+				},
+				"zone": {
+					"label": "Zone",
+					"placeholder": "newZoneName"
+				},
+				"ips": {
+					"label": "IPs",
+					"placeholder": "255.255.255.255"
+				},
+				"port": {
+					"label": "SSH Port",
+					"placeholder": "22"
+				},
+				"username": {
+					"label": "Username",
+					"placeholder": "yourlinuxusername"
+				},
+				"password": {
+					"label": "Password",
+					"placeholder": "yourlinuxpassword"
+				},
+				"monitor": {
+					"label": "Monitor Server"
+				},
+				"metrics": {
+					"label": "Collect Metrics"
+				}
+			},
+			"serverAdded": "You successfully added a server to the platform!",
+			"serverDeleted": "You successfully deleted \"{{ hostname }}\" from the platform",
+			"deleteServerDialog": {
+				"title": "Confirmation of Server Deletion",
+				"cancel": "Cancel",
+				"deleteServer": "Delete Server",
+				"deleteKey": "DELETE",
+				"deleteMessageIntro": "Do you really want to delete the server \"{{variable}}\"?",
+				"deleteMessageExplanation": "Please type the word \"{{variable}}\" in the following input and then click on the Delete button to proceed"
+			},
+			"silenceServerDialog": {
+				"title": "Silence alerts on Server",
+				"silenceServer": "Silence",
+				"unsilenceServer": "Remove Silence",
+				"reenableAlerts": "To re-enable alerts, click on the \"Remove Silence\" button below.",
+				"permanentSilence": "This server has been silenced permanently.",
+				"silenceDuration": "This server is currently silenced, so you won't get any alert from it for the next {{variable}}.",
+				"durations": {
+					"oneHour": "1 Hour",
+					"sixHours": "6 Hours",
+					"oneDay": "1 Day",
+					"permanently": "Permanently",
+					"days": "Days",
+					"hours": "Hours",
+					"minutes": "Minutes",
+					"seconds": "Seconds",
+					"custom": "Custom"
+				},
+				"reason": "Reason"
+			},
+			"noZones": "It looks like your cluster doesn't have any zone configured.",
+			"noServers": "You haven't added any servers to this zone yet."
+		},
+		"tasks": {
+			"empty": {
+				"headline": "It looks like you haven't launched any tasks yet.",
+				"subtitle": "Click the button below to launch a task...",
+				"button": "Launch New Task"
+			},
+			"cancelTask": "Cancel Task",
+			"cancelSuccess": "The task was cancelled successfully.",
+			"titles": {
+				"tasks": "Tasks",
+				"running": "Running / Queued",
+				"done": "Completed Logs",
+				"versionManager": "Version Manager",
+				"taskLauncher": "Task Launcher"
+			},
+			"refresh": "Refresh Tasks",
+			"cancelAll": "Cancel Queued Tasks",
+			"cancelAllSuccess": "You successfully cancelled all pending tasks.",
+			"showServers": "Show Servers",
+			"noServer": "Haven't found any log for any server at the moment...",
+			"hideServers": "Hide Servers",
+			"showServerDetails": "Server Details",
+			"hideServerDetails": "Hide Server Details",
+			"serverTable": {
+				"module": "Module",
+				"status": "Status",
+				"result": "Result",
+				"logs": "Logs"
+			},
+			"statuses": {
+				"complete": "Complete",
+				"running": "Running...",
+				"failed": "Failed",
+				"subtask_running": "Running Subtasks...",
+				"pending": "Queued",
+				"cancelled": "Cancelled"
+			},
+			"initDialog": {
+				"initDone": "You successfully started a task!",
+				"title": "Initialize Task",
+				"initButton": "Initialize",
+				"task": "Task",
+				"cluster": "Cluster",
+				"zone": "Zone",
+				"script": "Script",
+				"noScript": "It appears you currently have no scripts installed, click here to go to the Scripts page!",
+				"services": {
+					"any": "Any",
+					"title": "Services",
+					"all": "All",
+					"kamailio": "Kamailio",
+					"freeswitch": "FreeSWITCH",
+					"bigcouch": "BigCouch",
+					"monsterui": "Monster UI",
+					"rabbitmq": "RabbitMQ",
+					"kazoo": "Kazoo"
+				},
+				"hostname": "Hostname",
+				"any": "Any",
+				"each": "Each"
+			},
+			"detailLogsDialog": {
+				"title": "Logs Details: {{checkName}}",
+				"request": "Request",
+				"response": "Response"
+			},
+			"versionManager": {
+				"clusterSelection": {
+					"title": "Version Manager allows you to upgrade/downgrade services in a particular cluster.",
+					"subTitle": "To get started, first select the cluster that you wish to manage.",
+					"upgradeSubTitle": "Are you checking for upgrades or downgrades?",
+					"upgrade": "Upgrade",
+					"downgrade": "Downgrade",
+					"checkForUpgrades": "Check for Upgrades",
+					"checkForDowngrades": "Check for Downgrades"
+				},
+				"waiting": {
+					"titleUpgrade": "Checking for upgrades on ",
+					"titleDowngrade": "Checking for downgrades on ",
+					"subTitle": "This may take a few minutes, thank you for your patience."
+				},
+				"error": {
+					"titleErrorUpgrade": "Unable to proceed with this upgrade in ",
+					"titleErrorDowngrade": "Unable to proceed with this downgrade in ",
+					"exit": "Exit",
+					"paragraph1": "Some services on some servers do not have a current version defined.",
+					"paragraph2": "Run the task \"discover server services\" from the task launcher to discover the versions currently installed and then retry version manager once the discovery task has completed."
+				},
+				"selectServices": {
+					"titleUpgrade": "We found {{variable}} service(s) with upgrades available.",
+					"titleDowngrade": "We found {{variable}} service(s) with downgrades available.",
+					"subTitleUpgrade": "Select the services to be upgraded, see which servers will be affected, and choose the target version.",
+					"subTitleDowngrade": "Select the services to be downgraded, see which servers will be affected, and choose the target version.",
+					"targetVersion": "Target Version",
+					"expandLink": "Hide Servers/Versions",
+					"hideLink": "Show Servers/Versions",
+					"server": "Server",
+					"currentVersion": "Current Version",
+					"back": "Back To Cluster Selection",
+					"stageUpgrade": "Stage Upgrade",
+					"stageDowngrade": "Stage Downgrade",
+					"services": {},
+					"review": {
+						"titleUpgrade": "Please review the upgrade tasks you are about to perform.",
+						"subTitleUpgrade": "If everything looks good, go ahead and start your upgrades",
+						"titleDowngrade": "Please review the downgrade tasks you are about to perform.",
+						"subTitleDowngrade": "If everything looks good, go ahead and start your downgrades.",
+						"titleNonUpgrade": "The following servers will not get upgraded",
+						"titleNonDowngrade": "The following servers will not get downgraded",
+						"upgrade": "Upgrade",
+						"downgrade": "Downgrade",
+						"task": "Task",
+						"server": "Server",
+						"currentVersion": "Current Version",
+						"targetVersion": "Target Version",
+						"back": "Back To Zones",
+						"proceedUpgrade": "Upgrade Now",
+						"proceedDowngrade": "Downgrade Now"
+					}
+				},
+			"sortZones": {
+				"title": "Please select the order of regions to {{variable}} your services",
+				"back": "Back To Cluster Selection",
+				"proceed": "Confirm Zone Selection"
+			},
+			"successTasks": "You successfully started the tasks you selected. They are now in the queue of tasks to be executed."
+			},
+			"taskLauncher": {
+				"next": "Next",
+				"back": "Back",
+				"noAdvancedTaskSelected": "- Select an Advanced Task -",
+				"cancelAlert": "Are you sure you want to cancel this Task and return to the Task Manager?",
+				"successLaunch": "You successfully launched a task, you can check its progress in the Task Manager.",
+				"taskInfo": {
+					"description": "Task Description",
+					"impact": "Task Impact",
+					"severities": {
+						"0": "Unknown Impact",
+						"1": "Minimal Impact",
+						"2": "Potential Impact",
+						"3": "Severe Impact"
+					},
+					"severitiesHelp": {
+						"0": "We can not determine the impact of this task.",
+						"1": "No Impact: This is safe to run.",
+						"2": "Some Impact: This task will restart servers in a rolling sequence. If it detects a problem, it will stop and alert you. It should not affect Service unless this is the only instance of this service type available.",
+						"3": "Definite impact: This task will take core services down until it is complete. Users will not be able to make phone calls on the system during the time this task is running. Please plan appropriately before you run this task."
+					}
+				},
+				"taskPicker": {
+					"title": "Pick the task you want to run",
+					"subTitle": "Don't worry, we'll confirm all changes with you before the Task kicks off. Please make sure Lineman has been installed on all servers you want to perform Tasks on.",
+					"standard": "Standard Tasks",
+					"servers": "Servers",
+					"services": "Services",
+					"advanced": "Advanced Tasks",
+					"warning": "Warning!",
+					"warningText": "If you run an advanced task, it may impact system behavior. Advanced Tasks should not normally need to be run during regular Cluster operations, and should only be used by System Administrators with an understanding of how these tasks will impact system behavior.",
+					"continue": "continue"
+				},
+				"servicePicker": {
+					"title": "Select the Services you want to apply the Task to",
+					"subTitle": "Because you selected a Task that applies to Services, please tell us which services you want to apply the Task to."
+				},
+				"targetPicker": {
+					"title": "Now tell us where you want to apply the task",
+					"subTitle": "Selected Task: {{variable}}",
+					"targetFilterTitle": "Target",
+					"targetFilterText": "Filter your target server by Cluster, Zone and Server",
+					"cluster": "Cluster",
+					"zone": "Zone",
+					"serviceFilterTitle": "Services Filter",
+					"serviceFilterText": "You can also filter servers based on what they are running. This is not the service you will be running the task on, just a way of finding the servers you want",
+					"filterResults": "Filter Results",
+					"selectAll": "Select All",
+					"allClusters": "All Clusters",
+					"allZones": "All Zones",
+					"all": "Any"
+				},
+				"argsPicker": {
+					"title": "Just a little more information",
+					"subTitle": "This task requires you to specify some additional information",
+					"runTask": "Run this task...",
+					"zoneAll": "On all the selected servers simultaneously",
+					"zoneAllHelp": "This option is for when you want the task to deploy across all servers as quickly as possible and failure that impacts service is not a concern.",
+					"zoneEach": "On each server you've selected sequentially",
+					"zoneEachHelp": "Recommended: this is generally the safer way to run a task, even though it make take a long time."
+				},
+				"review": {
+					"runTasks": "Run Tasks Now!",
+					"title": "Review and Run Tasks",
+					"subTitle": "Here is a quick summary of the task you're about to run and the list of servers you selected",
+					"tasks": "Tasks",
+					"confirmationRisk": "I understand that if I run this, system behavior may be affected negatively, up to and including a system outage. I am prepared in case a system outage occurs.",
+					"table": {
+						"cluster": "Cluster",
+						"zone": "Zone",
+						"hostname": "Hostname"
+					}
+				}
+			}
+		},
+		"scripts": {
+			"empty": {
+				"headline": "It looks like you haven't added any script to your cluster yet.",
+				"subtitle": "Click the button below to add a new Script..",
+				"button": "Add New Script"
+			},
+			"addDialog": {
+				"add": "Add",
+				"title": "Add a Script to the System",
+				"description": {
+					"label": "Description",
+					"placeholder": "(Optional)"
+				},
+				"file": {
+					"label": "File"
+				},
+				"success": "You successfully added a script to the system"
+			},
+			"confirmDelete": "Are you sure you want to delete this script?",
+			"scriptDeleted": "You successfully deleted a script!",
+			"detailsDialog": {
+				"title": "Script Content"
+			},
+			"add": "Add New Script",
+			"viewCode": "View Code",
+			"viewServer": "See on which servers is this script installed",
+			"title": "Scripts",
+			"table": {
+				"columns": {
+					"name": {
+						"title": "Name"
+					},
+					"description": {
+						"title": "Description"
+					},
+					"countServer": {
+						"title": "Server Installs"
+					}
+				}
+			},
+			"serversDialog": {
+				"title": "Server List",
+				"headline": "List of servers where the script {{variable}} has been installed",
+				"serverName": "Server Name",
+				"location": "Location",
+				"installTime": "Install Time"
+			},
+			"runScript": "Run Script",
+			"runCommand": "Run Command",
+			"runCommandDialog": {
+				"title": "Run Command Configuration",
+				"run": "Select Servers",
+				"timeout": "Timeout",
+				"command": "Command",
+				"abortAfter": "Abort after"
+			},
+			"cancelAlert": "Are you sure you want to cancel this Task and return to the Scripts Listing?"
+		}
+	}
+}

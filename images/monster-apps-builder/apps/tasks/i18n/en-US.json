@@ -1,0 +1,118 @@
+{
+	"csvJobs": {
+		"common": {
+			"jobKeys": {
+				"number_management": "Numbers",
+				"list": "List",
+				"assign_to": "Assign To",
+				"delete": "Delete",
+				"reserve": "Reserve",
+				"add": "Add",
+				"update_features": "Update Features"
+			}
+		},
+		"imports": {
+			"title": "My Jobs",
+			"startNew": "Start New Job",
+			"refresh": "Refresh Table",
+			"table": {
+				"columns": {
+					"status": "Status",
+					"type": "Job Type",
+					"total": "# of Records",
+					"imported": "# Successful",
+					"rejected": "# Rejected",
+					"timestamp": "Date Submitted",
+					"input": "Input",
+					"actions": "Actions"
+				}
+			},
+			"statuses": {
+				"success": "Done",
+				"executing": "In Progress...",
+				"pending": "Pending",
+				"internal_error": "Failed"
+			},
+			"types": {
+				"number_management": "Numbers"
+			},
+			"actions": {
+				"add": "Add"
+			},
+			"tooltips": {
+				"previewOutput": "Preview Output",
+				"downloadOutput": "Download Output",
+				"previewInput": "Preview Input",
+				"previewOutput": "Preview Output",
+				"start": "Start Job",
+				"stop": "Stop Job",
+				"remove": "Cancel"
+			},
+			"previewPopup": {
+				"title": "Preview CSV"
+			},
+			"noInput": "--",
+			"noOutput": "--",
+			"taskAlreadyDone": "The job you are trying to stop is already done."
+		},
+		"uploads": {
+			"backToListing": "Back to Jobs Listing",
+			"title": "Select a Job",
+			"text": "Drag and drop your file here to upload, or browse your computer.",
+			"selectJob": "Select a Job from the list: ",
+			"emptyOption": "",
+			"jobs": {
+				"number_management": "Numbers",
+				"list": "List",
+				"assign_to": "Assign To",
+				"delete": "Delete",
+				"reserve": "Reserve",
+				"add": "Add",
+				"update_features": "Update Features"
+			},
+			"start": "Start Job",
+			"create": "Create and Start Later",
+			"success": {
+				"headline": "You successfully uploaded a CSV file, please click on Proceed to continue!",
+				"subline": "File Uploaded:"
+			},
+			"undo": "Undo",
+			"errors": {
+				"wrongType": "Invalid type, we only accept CSV files and we received: {{type}}"
+			},
+			"helpSelection": {
+				"doc": "Additional Information",
+				"description": "Description",
+				"requiredColumns": "Required Columns",
+				"optionalColumns": "Optional Columns"
+			}
+		},
+		"review": {
+			"title": "Please review your imported file",
+			"proceed": "Proceed",
+			"headline": {
+				"first": "You are trying to import: ",
+				"second": "Number of records in this file: ",
+				"third": "We selected the first 5 records to help you review the mappings below and check to make sure they are correct. Once you've approved or fixed the mappings, go ahead and submit the import job.",
+				"fourth": "Job selected: "
+			},
+			"numbersTable": {
+				"columns": {
+					"first_name": "First Name",
+					"last_name": "Last Name",
+					"age": "Age"
+				}
+			},
+			"errors": {
+				"title": "It appears that the columns matching didn't go as expected, please fix the following issues:",
+				"missing": "Column missing",
+				"tooMany": "Column selected more than once"
+			},
+			"columns": {
+				"mandatory": "Required Columns",
+				"optional": "Optional Columns",
+				"others": "Others"
+			}
+		}
+	}
+}

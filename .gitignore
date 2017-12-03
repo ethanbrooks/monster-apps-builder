@@ -1,0 +1,5 @@
+dist/*.tar.gz
+dist/*.deb
+local-notes.txt
+dist/Packages
+dist/Release

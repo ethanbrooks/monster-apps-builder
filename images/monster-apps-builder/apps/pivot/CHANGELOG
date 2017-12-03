@@ -1,0 +1,25 @@
+Release Summary for 4.2.0
+  Difference between master and 4.1
+  * Summary
+      - As a FEE, I want to use lodash instead of underscorejs so that I have access to more utilities
+  * Commits
+      - [UI-2866: Reference lodash intead of underscore following migration (#3)](https://github.com/2600hz/monster-ui-pivot/commit/86d4e8098dff68f018632c9d11f2d1bc503b6840) by Joris Tirado
+  * Summary
+      - As a FEE, I want ESLint errors/warnings to be fixed for the Pivot app so that the codebase is consistent
+  * Commits
+      - [UI-2846: Fix ESLint erros/warnings (#2)](https://github.com/2600hz/monster-ui-pivot/commit/9de056864cab3bd53ca28eb79c52e28387d9cba6) by Joris Tirado
+  * Summary
+      - As an engineer, I want to add the new numberWrapper control in new places, so the UI is more consistent
+  * Commits
+      - [UI-2726: adding number wrapper to pivot number routing view](https://github.com/2600hz/monster-ui-pivot/commit/47889ceee7a69070d81dea558a36d359688a6bbf) by Jean-Roch Maitre
+  * Summary
+      - As a FEE, I want spaced tables so that I can match mockups
+  * Commits
+      - [UI-2686: Use new monster table markup for pivot (#1)](https://github.com/2600hz/monster-ui-pivot/commit/79cb624d471ad2e45d8a984f2c31e7ea6496172d) by Joris Tirado
+  * Summary
+      - As a developer I want UI requests pivot debug logs with debug_id instead of call_id
+  * Commits
+      - [UI-2648: now uses debug_id instead of call_id to show details of debug pivot line](https://github.com/2600hz/monster-ui-pivot/commit/72d8d7326043cfa4d0af404acd67f17b7ab40b3c) by Jean-Roch Maitre
+  * [OOB: Updating metadata for pivot app](https://github.com/2600hz/monster-ui-pivot/commit/afde36ad4d8309bad5e516dcd899fa17198a90c1) by JR Maitre
+  * [OOB: remove smart silent callflow&#039;](https://github.com/2600hz/monster-ui-pivot/commit/acb93e26a501d9fc26bc265a1d2760944e8ac295) by Jean-Roch Maitre
+ -- 2600Hz Offical <packages@2600hz.com>  Wed, 27 Sep 2017 22:40:36 +0000

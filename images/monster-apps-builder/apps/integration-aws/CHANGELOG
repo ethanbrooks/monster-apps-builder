@@ -1,0 +1,7 @@
+Release Summary for 4.2.1
+  Changes to 4.2 after version 4.2.0
+  * Summary
+      - Leaving the host parameter empty on a AWS connector configuration sends an empty string
+  * Commits
+      - [UI-2935: remove fields if empty](https://github.com/2600hz/monster-ui-integration-aws/commit/2e6305b942c73e16db0868695127b5a47f7d9212) by JR Maitre
+ -- 2600Hz Offical <packages@2600hz.com>  Tue, 24 Oct 2017 22:51:48 +0000

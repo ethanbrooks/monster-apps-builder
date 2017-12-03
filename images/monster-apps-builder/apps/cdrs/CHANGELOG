@@ -1,0 +1,7 @@
+Release Summary for 4.2.1
+  Changes to 4.2 after version 4.2.0
+  * Summary
+      - In the CDRs app if I click download I only get 50 results (the default page size)
+  * Commits
+      - [UI-2937: fix small issue when data payload empty, also adding paginate false to download links](https://github.com/2600hz/monster-ui-cdrs/commit/babf402e938e096a41fab056bbedd9e33e28805c) by Jean-Roch Maitre
+ -- 2600Hz Offical <packages@2600hz.com>  Tue, 24 Oct 2017 22:56:29 +0000

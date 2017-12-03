@@ -1,0 +1,16 @@
+{
+	"reseller_reporting": {
+		"welcome": "Reseller Report Generator",
+		"listAccounts": "Accounts to Include in Report",
+		"reportOptions" : "Reporting Options",
+		"reportPeriod" : "Report Period",
+		"reportMonth" : "Month",
+		"reportYear" : "Year",
+		"runReport": "Run Report",
+		"resellerCost" : "Include Reseller Actual Cost",
+		"customerCost" : "Include Customer Price",
+		"deliverAddress" : "Deliver report via email to",
+		"selectAll": "Select All",
+		"unselectAll": "Unselect All"
+	}
+}

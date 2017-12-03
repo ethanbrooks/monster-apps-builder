@@ -1,0 +1,33 @@
+Release Summary for 4.2.0
+  Difference between master and 4.1
+  * Summary
+      - As a user I want to be able to stop/cancel tasks that are running so that I don&#039;t nee to wait for them to finish.
+  * Commits
+      - [UI-2873: add a way to stop tasks](https://github.com/2600hz/monster-ui-tasks/commit/6e819d2e9b0a20ac58149acd63318c352c0a38fb) by JR Maitre
+  * Summary
+      - As a user I want to be able to start pending tasks
+  * Commits
+      - [UI-2858: added a way to start task after a while](https://github.com/2600hz/monster-ui-tasks/commit/fa19795377ad1527b30cfc8f3474f116206b0cf3) by Jean-Roch Maitre
+  * Summary
+      - As a FEE, I want to use lodash instead of underscorejs so that I have access to more utilities
+  * Commits
+      - [UI-2866: Reference lodash intead of underscore following migration (#5)](https://github.com/2600hz/monster-ui-tasks/commit/46c5e7bc00f169a11230c5b32925f9b9538a4104) by Joris Tirado
+  * Summary
+      - As a FEE, I want ESLint errors/warnings to be fixed for the CSV Jobs app so that the codebase is consistent
+  * Commits
+      - [UI-2841: Fix ESLint erros/warnings (#4)](https://github.com/2600hz/monster-ui-tasks/commit/f5ba0bc61c0f6f37991432a13d477690dea712a3) by Joris Tirado
+  * Summary
+      - As a user of CSV jobs I have some suggestions
+  * Commits
+      - [UI-2701: quick fixes for csv tasks](https://github.com/2600hz/monster-ui-tasks/commit/5bbe1abb2ddfa17804bb7b149303fcf9e07b7048) by Jean-Roch Maitre
+  * Summary
+      - As a FEE, I want the core-content id to use snake case so that all ids are in the format
+  * Commits
+      - [UI-2694: Normalize core content id name to snake case (#3)](https://github.com/2600hz/monster-ui-tasks/commit/25d8c730576f8b8f672b716fc6e135956a698515) by Joris Tirado
+  * Summary
+      - As a FEE, I want spaced tables so that I can match mockups
+  * Commits
+      - [UI-2686: Use new monster table markup for tasks (#2)](https://github.com/2600hz/monster-ui-tasks/commit/a08c2a12170b6d7e41dfa2fb511730204921bd5d) by Joris Tirado
+  * [OOB: Updating description and adding accurate screenshots for csv jobs](https://github.com/2600hz/monster-ui-tasks/commit/260de200de99f7978b41df22e120c8de0c977ec2) by JR Maitre
+  * [OOB: adding ids to tasks table to support page size changes](https://github.com/2600hz/monster-ui-tasks/commit/9e3a9971e7b0437732ba17ddefc10f09d1a05f15) by Jean-Roch Maitre
+ -- 2600Hz Offical <packages@2600hz.com>  Wed, 27 Sep 2017 22:49:21 +0000

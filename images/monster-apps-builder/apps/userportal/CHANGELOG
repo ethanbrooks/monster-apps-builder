@@ -1,0 +1,39 @@
+Release Summary for 4.2.0
+  Difference between master and 4.1
+  * Summary
+      - As a FEE, I want the userportal app to use the insertTemplate helper so that loading is consistent between apps
+  * Commits
+      - [UI-2872: Use insertTemplate helper to show loading screens for each tab (#4)
+  * UI-2872: Use insertTemplate helper in Conference tab
+  * UI-2872: Use insertTemplate helper in Voicemails tab
+  * UI-2872: Use insertTemplate helper in Settings tab
+  * UI-2872: Use insertTemplate helper in Contact List tab
+  * UI-2872: Use insertTemplate helper in Faxes tab
+  * UI-2872: Use insertTemplate helper in Call History tab](https://github.com/2600hz/monster-ui-userportal/commit/f68cafd972ad94eef722a10b0d2646b9a7e401ff) by Joris Tirado
+  * Summary
+      - As a FEE, I want to use lodash instead of underscorejs so that I have access to more utilities
+  * Commits
+      - [UI-2866: Migrate from underscore to lodash (#3)
+  * UI-2866: Reference lodash intead of underscore following migration
+  * UI-2866: Migrate underscore specific utils to lodash](https://github.com/2600hz/monster-ui-userportal/commit/24291d8263737cf89706ae1a1d84b54aaf91c067) by Joris Tirado
+  * Summary
+      - As a user, I expect to see the same information in voicemail manager and userportal / voicemail section, so that it&#039;s easier to manage customer support
+  * Commits
+      - [UI-2778: now display both from and cid name fields in userportal / vms section to be consistent with vm manager](https://github.com/2600hz/monster-ui-userportal/commit/a826e506ce117be93581c91163f269b91b5c92c9) by Jean-Roch Maitre
+  * Summary
+      - As an engineer, I want to add the new numberWrapper control in new places, so the UI is more consistent
+  * Commits
+      - [UI-2726: added wrapper to voicemail in user portal](https://github.com/2600hz/monster-ui-userportal/commit/1f88b18e95357c2c6f4ed459e3c9de451e8c178c) by Jean-Roch Maitre
+      - [UI-2726: format numbers in userportal, quick fix for table id missing messing up page size toggle](https://github.com/2600hz/monster-ui-userportal/commit/7c58f28630e843f75dfa67b46c347cc55acdaa48) by Jean-Roch Maitre
+  * Summary
+      - As a FEE, I want the core-content id to use snake case so that all ids are in the format
+  * Commits
+      - [UI-2694: Normalize core content id name to snake case (#2)](https://github.com/2600hz/monster-ui-userportal/commit/a343bdf77f1234cbffdb943a2ed9ee17ef4f488a) by Joris Tirado
+  * Summary
+      - As a FEE, I want spaced tables so that I can match mockups
+  * Commits
+      - [UI-2686: Use new monster table markup for userportal (#1)](https://github.com/2600hz/monster-ui-userportal/commit/5835f1c5c0120832e9bce3f1036cd7c0fe4c47c8) by Joris Tirado
+  * [OOB: Updated metadata](https://github.com/2600hz/monster-ui-userportal/commit/5632bf9d1dbebcbf9f8735b2e84437a9a3456aec) by JR Maitre
+  * [OOB: remove test line that wasn&#039;t removed](https://github.com/2600hz/monster-ui-userportal/commit/cc0d2350d96b76fe4c0d6e94da021c03b653b88c) by Jean-Roch Maitre
+  * [OOB: Cleaned up userportal code](https://github.com/2600hz/monster-ui-userportal/commit/438792ae48103ae8c1fc553adb2ba570745c1a7f) by Jean-Roch Maitre
+ -- 2600Hz Offical <packages@2600hz.com>  Wed, 27 Sep 2017 22:53:12 +0000

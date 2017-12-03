@@ -1,0 +1,80 @@
+{
+	"duo": {
+		"settings": {
+			"title": "Settings",
+			"form": {
+				"name": {
+					"label": "Name",
+					"help": "A friendly name so you can identify this configuration later"
+				},
+				"appSecretKey": {
+					"label": "Application Secret Key",
+					"help": "Can be anything but should be at least 40 characters long.",
+					"generate": "Generate"
+				},
+				"integrationKey": {
+					"label": "Integration Key",
+					"help": "From duo.com application settings"
+				},
+				"secretKey": {
+					"label": "Secret Key",
+					"help": "From duo.com application settings"
+				},
+				"apiHostname": {
+					"label": "API Hostname",
+					"help": "From duo.com application settings"
+				},
+				"allowLogin": {
+					"label": "If Duo Security is unavailable allow users to login normally?"
+				},
+				"save": "Save",
+				"delete": "Delete"
+			}
+		},
+		"logs": {
+			"title": "Failure Logs",
+			"table": {
+				"date": "Date",
+				"status": "Status",
+				"reason": "Reason",
+				"details": "Details"
+			},
+			"detailDialogTitle": "Attempt Details"
+		},
+		"help": {
+			"title": "Help",
+			"overview": {
+				"title": "Overview",
+				"firstSentence": "Duo integrates with Kazoo to add two-factor authentication to your Kazoo logins.",
+				"secondSentence": "Two factor strengthens access security by requiring two methods (also referred to as factors) to verify your identity. These factors can include something you know - like a username and password, plus something you have - like a smartphone app to approve authentication requests.",
+				"thirdSentence": "Two-factor authentication protects against phishing, social engineering and password brute-force attacks and secures your logins from attackers exploiting weak or stolen credentials."
+			},
+			"firstSteps": {
+				"title": "First Steps",
+				"signupText": "Sign up for a Duo account",
+				"beforeDuoAdminLink": "Log in to the ",
+				"duoAdminPanelLink": "Duo Admin Panel",
+				"afterDuoAdminLink": " and navigate to Applications.",
+				"beforeGettingStartedLink": "lick Protect an Application and locate Web SDK in the applications list. Click Protect this Application to get your integration key, secret key, and API hostname. See ",
+				"gettingStartedLink": "Getting Started",
+				"afterGettingStartedLink": " for help.",
+				"fourthStep": "Copy the integration key, secret key and API hostname to the settings tab of this application.",
+				"fifthStep": "Click 'generate' or enter your own application secrect key",
+				"sixthStep": "Choose if users should be able to login if Duo Security is unavailable",
+				"seventhStep": "Click save",
+				"eigthStep": "Configure Kazoo authentication to use the Duo integration"
+			},
+
+			"configureAuth": {
+				"title": "Configure Kazoo Authentication",
+				"firstStep": "Enable the API Authentication Monster UI application if it is not already in the Application Exchange",
+				"secondStep": "Switch to the API Authentication application",
+				"thirdStep": "Click on the User Authentication tab",
+				"fourthStep": "Enable 2-factor authentication and select Duo as the provider.",
+				"fifthStep": "Configure Kazoo authentication to use the Duo integration",
+				"sixthStep": "Choose if you want to provide 2-factor for sub-accounts as well",
+				"seventhStep": "Click save"
+			}
+		}
+	}
+}

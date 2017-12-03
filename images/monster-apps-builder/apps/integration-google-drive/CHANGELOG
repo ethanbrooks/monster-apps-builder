@@ -1,0 +1,30 @@
+Release Summary for 4.2.0
+  Difference between master and 4.1
+  * Summary
+      - As a FEE, I want to use lodash instead of underscorejs so that I have access to more utilities
+  * Commits
+      - [Merge pull request #1 from 2600hz/UI-2866
+  UI-2866: Reference lodash intead of underscore following migration](https://github.com/2600hz/monster-ui-integration-google-drive/commit/a2b6060c06e29b169bf7253cb1c984ef2143269a) by Joris Tirado
+      - [UI-2866: Reference lodash intead of underscore following migration](https://github.com/2600hz/monster-ui-integration-google-drive/commit/b1e22872bf7485ba1f747dd53bf67e09706e4899) by Joris Tirado
+  * Summary
+      - As a FEE, I want to add updated App Icons to the project so they look better to the end-user
+  * Commits
+      - [UI-2855: add new icon to google drive integration app](https://github.com/2600hz/monster-ui-integration-google-drive/commit/0c10591fc02ac7552e9aef69925d141870f7e0cc) by Jean-Roch Maitre
+  * Summary
+      - As a user, I want to see the google account linked to my google connector, so that it&#039;s easier to understand
+  * Commits
+      - [UI-2781: now properly display google user information in google drive connector](https://github.com/2600hz/monster-ui-integration-google-drive/commit/b8b6d72b369b142bc003c96ed5f8a2d3135dcec5) by Jean-Roch Maitre
+  * Summary
+      - As a user, I want to see the same control when I select a storage plan for call recordings or voicemails, so that I understand it easily
+  * Commits
+      - [UI-2765: removes useless img, use svg instead](https://github.com/2600hz/monster-ui-integration-google-drive/commit/a6b78e9571010a33b757c8b529d16dc6d9030784) by Jean-Roch Maitre
+  * Summary
+      - App metadata missing for integration apps
+  * Commits
+      - [UI-2767: add metadata folder to google drive integration](https://github.com/2600hz/monster-ui-integration-google-drive/commit/363ba72fae19c87912043b5aa2aabc291ee2682f) by Jean-Roch Maitre
+  * [OOB: Enforce snake case for app container id attribute](https://github.com/2600hz/monster-ui-integration-google-drive/commit/2ee7ac249fbb32f2d2d7538f43f6ebb4b82024d8) by Joris Tirado
+  * [Merge branch &#039;master&#039; of https://github.com/2600hz/monster-ui-integration-google-drive](https://github.com/2600hz/monster-ui-integration-google-drive/commit/7f6f4837641598f4604d4e47f6f6c0ac0d93a4a9) by JR Maitre
+  * [OOB: Updating metadata for google drive ap](https://github.com/2600hz/monster-ui-integration-google-drive/commit/a3ba20ab71aa0c474a2d810b2ac10b9f34363678) by JR Maitre
+  * [OOB: handle undefined case](https://github.com/2600hz/monster-ui-integration-google-drive/commit/e3faa3b3c721204ffe0499ba361fd7475562d1f7) by Jean-Roch Maitre
+  * [OOB: updating acc name to name and fixed new account button](https://github.com/2600hz/monster-ui-integration-google-drive/commit/2604e27fd33a983c05598239ac90be54d0d8e5f1) by Jean-Roch Maitre
+ -- 2600Hz Offical <packages@2600hz.com>  Wed, 27 Sep 2017 23:04:39 +0000

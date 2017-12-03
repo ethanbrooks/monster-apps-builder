@@ -1,0 +1,81 @@
+{
+	"pivot": {
+		"menuTitles": {
+			"routing": "Numbers Routing",
+			"debug": "Live Debug",
+			"getStarted": "Get Started"
+		},
+		"routing": {
+			"title": "Number Routing",
+			"headline": "Configure which phone numbers will route calls to which HTTP URLs for call handling.",
+			"addCallflow": "Create new Pivot Action",
+			"edit": "Edit",
+			"delete": "Delete",
+			"tryNow": "Test Connection",
+			"pingSuccess": "A request was sent to this Pivot Action successfully!",
+			"tableTitles": {
+				"name": "Name",
+				"number": "Number",
+				"routesTo": "Routes To",
+				"actions": "Actions"
+			},
+			"creationForm": {
+				"title": "Create a new Pivot Callflow",
+				"editTitle": "Editing a Pivot Callflow",
+				"save": "Save",
+				"name": {
+					"help": "Name",
+					"placeholder": "",
+					"label": "Name"
+				},
+				"number": {
+					"help": "Number",
+					"placeholder": "+15555555555",
+					"label": "Number"
+				},
+				"url": {
+					"help": "URL",
+					"placeholder": "http://your.server.com",
+					"label": "URL"
+				},
+				"method": {
+					"help": "Method",
+					"placeholder": "POST/GET",
+					"label": "Method",
+					"post": "POST",
+					"get": "GET"
+				},
+				"format": {
+					"label": "Format",
+					"help": "Format",
+					"kazoo": "Kazoo",
+					"twiml": "twiml"
+				}
+			}
+		},
+		"debug": {
+			"title": "Live Debug",
+			"headline": "Below is a list of recent calls that triggered requests to your HTTP server. Click \"View Details\" to see what we sent to you, and how your server replied to us.",
+			"getDetails": "View details",
+			"detailDialog": {
+				"popupTitle": "Debug Tool",
+				"title": "It looks like this call took {{variable}} different step(s). You can navigate through the different requests and responses for each step by clicking on the arrows below",
+				"noResponse": "Pivot did not detect any Response for this Request",
+				"request": "Request",
+				"response": "Response",
+				"getParameters": "GET Parameters",
+				"headers": "Headers",
+				"body": "Body",
+				"close": "Close",
+				"noHeaders": "None",
+				"iteration": "Step {{variable}}"
+			},
+			"tableTitles": {
+				"status": "Status",
+				"url": "URL",
+				"time": "Time",
+				"actions": "Actions"
+			}
+		}
+	}
+}

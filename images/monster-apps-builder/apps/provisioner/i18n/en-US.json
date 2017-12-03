@@ -1,0 +1,88 @@
+{
+	"global": "Defaults",
+	"reseller": "Provider",
+	"account": "Account",
+	"devices": "Devices",
+	"accounts": "Accounts",
+	"delete": "Delete",
+	"configure": "Configure",
+	"addDevice": "Add Device",
+	"noDevices": "There are no devices in this account.",
+	"deviceSettings": "Device's Settings",
+	"accountSettings": "Account's Settings",
+	"providerSettings": "Provider's Settings",
+	"brand": "Brand",
+	"model": "Model",
+	"deviceName": "Device's name",
+	"macAddress": "MAC Address",
+	"cancel": "Cancel",
+	"save": "Save",
+	"reset": "Reset",
+	"selectBrand": "Select a brand",
+	"selectModel": "Select a model",
+	"providerSettings": "Provider Settings",
+	"accountSettings": "Account Settings",
+	"provisionerUrl": "The Provisioner is configured with the following URL: ",
+	"inherit": "Inherit",
+	"inherits": {
+		"partOne": "Inherits ",
+		"partTwo": " from the "
+	},
+	"viewType": {
+		"device": "Device Settings",
+		"account": "Account Settings",
+		"reseller": "Provider Settings"
+	},
+	"loadingMessage": {
+		"get": {
+			"reseller": "Loading Provider Settings",
+			"account": "Loading Account Settings",
+			"device": "Loading Device Settings"
+		},
+		"create": {
+			"device": "Saving New Device"
+		},
+		"update": {
+			"reseller": "Updating Provider Settings",
+			"account": "Updating Account Settings",
+			"device": "Updating Device Settings"
+		},
+		"list": {
+			"accounts": "Loading Accounts List"
+		}
+	},
+	"toastr": {
+		"info": {
+			"unknownMacAddress": "{{macAddress}} does not match any devices in your account's list!"
+		},
+		"__comment": "UI-1917: Add button to unlock a device in the Advanced Provisioner app",
+		"__version": "3.22",
+		"success": {
+			"unlock": "Your device was unlocked successfully"
+		}
+	},
+	"alert": {
+		"confirm": {
+			"generateFiles": "Your settings are about to be updated. Do you want to generate the corresponding files?"
+		}
+	},
+	"yes": "Yes",
+	"no": "No",
+	"__comment": "UI-377: Adding restart feature to provisioner",
+	"__version": "3.21",
+	"restart": {
+		"label": "Restart",
+		"success": "You successfully sent a Restart request to this device!",
+		"disabled": "It appears that this device doesn't exist in the platform anymore, or isn't registered, so we won't be able to send a Restart request for this device"
+	},
+	"searchDevicePlaceholder": "Search a device...",
+	"__comment": "UI-1829: added a confirm box when deleting a device",
+	"__version": "3.22",
+	"confirmDelete": "Are you sure you want to delete that device from the Provisioner?",
+	"__comment": "UI-1917: Add button to unlock a device in the Advanced Provisioner app",
+	"__version": "3.22",
+	"unlock": "Unlock",
+	"__comment": "UI-2291: Add i18n entry for unsupported setting info",
+	"__version": "3.23",
+	"settingsNotSupported": "Settings not supported for this device"
+}
